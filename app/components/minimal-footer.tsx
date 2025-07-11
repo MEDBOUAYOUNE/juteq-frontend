@@ -61,7 +61,7 @@ export default function MinimalFooter() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/" className="text-gray-600 hover:text-gray-900 transition-colors">
+                    <Link href="/legal/privacy" className="text-gray-600 hover:text-gray-900 transition-colors">
                       Privacy Policy
                     </Link>
                   </li>

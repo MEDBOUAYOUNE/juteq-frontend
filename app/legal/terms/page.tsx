@@ -21,17 +21,10 @@ export default function TermsOfUsePage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Header */}
-      <section className="py-8 bg-gray-50 border-b border-gray-200">
+      <section className="py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* <Link
-            href="/"
-            className="inline-flex items-center text-gray-600 hover:text-gray-900 font-medium transition-colors mb-6"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Home
-          </Link> */}
-          <h1 className="text-3xl font-medium text-black mb-2">JOTIQ Terms of Use</h1>
-          <p className="text-gray-600">Last Updated: 09/01/2025</p>
+          <h1 className="text-4xl font-medium text-black mb-4 text-center">JOTIQ Terms of Use</h1>
+          {/* <p className="text-gray-600 mb-5">Last Updated: 09/01/2025</p> */}
         </div>
       </section>
 
@@ -60,15 +53,18 @@ export default function TermsOfUsePage() {
             {/* Main Content */}
             <div className="flex-1 max-w-4xl">
               <div className="prose prose-lg max-w-none">
-                <div className="bg-gray-50 border border-gray-200 rounded p-6 mb-12">
-                  <p className="text-gray-700 leading-relaxed mb-0">
+                <p className="text-gray-600 text-sm mb-6">
+              <strong>Last Updated:</strong> 09/01/2025
+            </p>
+                <div className="mb-6">
+                  <p className="text-gray-700 leading-relaxed">
                     Welcome to JOTIQ. Please read these Terms of Use carefully before using our platform. By accessing
                     or using JOTIQ, you agree to be bound by these Terms.
                   </p>
                 </div>
 
                 {/* Section 1 */}
-                <section id="introduction" className="mb-12">
+                <section id="introduction" key="introduction" className="mb-12">
                   <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">1. Introduction</h2>
                   <div className="text-gray-700 leading-relaxed space-y-4">
                     <p>
@@ -326,7 +322,7 @@ export default function TermsOfUsePage() {
                 ))}
 
                 {/* Contact Section */}
-                <div className="mt-16 pt-8 border-t border-gray-200">
+                {/* <div className="mt-16 pt-8 border-t border-gray-200">
                   <h3 className="text-lg font-medium text-black mb-4">Questions about these Terms?</h3>
                   <p className="text-gray-700 mb-6">
                     If you have any questions or concerns about these Terms of Use, please contact our legal team.
@@ -337,7 +333,7 @@ export default function TermsOfUsePage() {
                   >
                     Contact Legal Team
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
