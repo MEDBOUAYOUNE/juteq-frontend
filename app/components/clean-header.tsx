@@ -3,11 +3,11 @@ import { ChevronDown } from "lucide-react"
 
 export default function CleanHeader() {
   return (
-    <header className="bg-smoke-white border-b border-gray-100 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
+    <header className="bg-smoke-white border-b border-gray-100 sticky  top-0 z-50 backdrop-blur-sm bg-white/95">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 py-5">
         <Link href="/">
           {/* <a className="flex items-center"> */}
             <img

@@ -1,22 +1,3 @@
-// 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 import Link from "next/link"
 import { ArrowRight, Brain, Bot, TrendingUp, Mail, Phone, BarChart3, CheckCircle, Sparkles } from "lucide-react"
@@ -25,7 +6,7 @@ export default function AIHero() {
   return (
     <section className="bg-gray-50 pt-20 pb-24 lg:pt-24 lg:pb-32 relative overflow-hidden">
       {/* AI Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
+      {/* <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-2 h-2 bg-dodger-blue rounded-full animate-pulse"></div>
         <div
           className="absolute top-40 right-32 w-1 h-1 bg-soft-blue rounded-full animate-pulse"
@@ -35,9 +16,9 @@ export default function AIHero() {
           className="absolute bottom-32 left-40 w-1.5 h-1.5 bg-dodger-blue rounded-full animate-pulse"
           style={{ animationDelay: "2s" }}
         ></div>
-      </div>
+      </div> */}
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-7xl mx-auto relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-left animate-fade-in">
@@ -87,7 +68,7 @@ export default function AIHero() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex flex-wrap gap-8 text-left">
+            {/* <div className="flex flex-wrap gap-8 text-left">
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-green-500" />
                 <span className="text-sm font-medium text-gray-700">5,000+ Active Users</span>
@@ -100,7 +81,7 @@ export default function AIHero() {
                 <CheckCircle className="w-5 h-5 text-green-500" />
                 <span className="text-sm font-medium text-gray-700">95% Success Rate</span>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Visual - SaaS Dashboard Mockup */}
@@ -115,7 +96,7 @@ export default function AIHero() {
                   <div className="w-3 h-3 bg-green-400 rounded-full"></div>
                 </div>
                 <div className="text-sm font-medium text-gray-500 flex items-center">
-                  <Bot className="w-4 h-4 mr-2 text-dodger-blue" />
+                  <div className="w-4 h-4 mr-2 text-dodger-blue" />
                   JOTIQ Dashboard
                 </div>
                 <div className="flex items-center space-x-2">
@@ -203,7 +184,7 @@ export default function AIHero() {
             </div>
 
             {/* Floating Success Notifications */}
-            <div
+            {/* <div
               className="absolute -top-4 -right-4 bg-white rounded-xl shadow-lg p-3 animate-bounce border border-green-200"
               style={{ animationDelay: "1s" }}
             >
@@ -240,7 +221,7 @@ export default function AIHero() {
                   <div className="text-gray-500 text-xs">Qualifying lead...</div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import Link from "next/link"
 
 export default function MinimalFooter() {
+
   return (
     <footer className="bg-white border-t border-gray-200 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -66,8 +67,8 @@ export default function MinimalFooter() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/legal/cookie-settings" className="text-gray-600 hover:text-gray-900 transition-colors">
-                      Cookie Settings
+                    <Link href="/legal/cookie" className="text-gray-600 hover:text-gray-900 transition-colors">
+                      Cookie Policy
                     </Link>
                   </li>
                 </ul>
