@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   keywords: "AI outreach, cold calling, lead generation, business development, recruiting tools",
   icons: {
     icon: "/favicon.png",
-    // apple: "/apple-touch-icon.png",
   },
 }
 

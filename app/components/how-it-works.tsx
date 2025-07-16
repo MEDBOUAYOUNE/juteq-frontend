@@ -78,7 +78,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-2 bg-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -95,10 +95,10 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Header */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center px-4 py-2 bg-dodger-blue/10 rounded-full text-sm font-medium text-dodger-blue mb-6">
+          {/* <div className="inline-flex items-center px-4 py-2 bg-dodger-blue/10 rounded-full text-sm font-medium text-dodger-blue mb-6">
             <ArrowRight className="w-4 h-4 mr-2" />
             Step-by-Step Process
-          </div>
+          </div> */}
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             How <span className="text-dodger-blue">JOTIQ</span> Works
           </h2>

@@ -3,7 +3,7 @@ import { ArrowRight, Play } from "lucide-react"
 
 export default function MinimalCTA() {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-2   bg-white relative overflow-hidden">
        {/* Bottom CTA */}
                <div className="mt-20 text-center">
                  <div className="bg-gradient-to-r from-dodger-blue to-soft-blue rounded-3xl p-12 relative overflow-hidden">

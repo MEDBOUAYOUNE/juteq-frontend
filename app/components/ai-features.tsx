@@ -1,210 +1,163 @@
-import { Mail, Upload, Phone, Search, Brain, Sparkles, Zap, Bot, MessageSquare, BarChart3 } from "lucide-react"
+import { Target, Users, TrendingUp, BarChart3, CheckCircle } from "lucide-react"
 
 const features = [
   {
-    icon: Mail,
-    aiIcon: Brain,
-    title: "Save Hours Every Day",
-    description: "AI automates email outreach, personalizes messages, and optimizes send times for maximum engagement.",
-    aiFeatures: ["Automated email generation", "Personalized content", "Send time optimization"],
-    gradient: "from-blue-500 to-purple-6",
+    icon: Target,
+    title: "Automated Email Outreach",
+    description:
+      "AI crafts personalized emails that convert, automatically scheduling and optimizing send times for maximum engagement.",
+    features: ["Smart personalization", "Optimal timing", "A/B testing"],
+    color: "blue",
   },
   {
-    icon: Phone,
-    aiIcon: MessageSquare,
-    title: "AI-Powered Cold Calling",
-    description: "AI makes calls that engage prospects, book meetings, and handle objections seamlessly.",
-    aiFeatures: ["Real-time objection handling", "Dynamic script generation", "Call analytics"],
-    gradient: "from-green-500 to-teal-600",
+    icon: Users,
+    title: "Intelligent Lead Qualification",
+    description:
+      "AI analyzes and scores prospects automatically, ensuring your team focuses on the highest-value opportunities.",
+    features: ["Lead scoring", "Behavioral analysis", "Priority ranking"],
+    color: "green",
   },
   {
-    icon: Upload,
-    aiIcon: Zap,
-    title: "Smart Lead Generation",
-    description: "AI identifies and qualifies leads from multiple sources, ensuring you focus on the best prospects.",
-    aiFeatures: ["Lead scoring", "Source prioritization", "Automated follow-ups"],
-    gradient: "from-purple-500 to-pink-600",
+    icon: TrendingUp,
+    title: "Smart Pipeline Management",
+    description:
+      "AI tracks deal progression and predicts outcomes, helping you close more deals with data-driven insights.",
+    features: ["Deal forecasting", "Pipeline optimization", "Risk assessment"],
+    color: "orange",
   },
   {
-    icon: Search,
-    aiIcon: BarChart3,
-    title: "Real-Time Sales Analytics",
-    description: "AI analyzes sales data to provide actionable insights, helping you make informed decisions.",
-    aiFeatures: ["Predictive analytics", "Performance tracking", "Market trend analysis"],
-    gradient: "from-orange-500 to-red-600",
+    icon: BarChart3,
+    title: "Performance Analytics",
+    description:
+      "AI provides actionable insights from your outreach data, continuously improving your conversion rates.",
+    features: ["Conversion tracking", "Performance insights", "ROI optimization"],
+    color: "blue",
   },
 ]
 
+const getColorClasses = (color: string) => {
+  switch (color) {
+    case "blue":
+      return {
+        bg: "bg-blue-600",
+        text: "text-blue-600",
+        border: "border-blue-200",
+        hover: "hover:border-blue-300",
+      }
+    case "green":
+      return {
+        bg: "bg-green-600",
+        text: "text-green-600",
+        border: "border-green-200",
+        hover: "hover:border-green-300",
+      }
+    case "orange":
+      return {
+        bg: "bg-orange-600",
+        text: "text-orange-600",
+        border: "border-orange-200",
+        hover: "hover:border-orange-300",
+      }
+    default:
+      return {
+        bg: "bg-blue-600",
+        text: "text-blue-600",
+        border: "border-blue-200",
+        hover: "hover:border-blue-300",
+      }
+  }
+}
+
 export default function AIFeatures() {
   return (
-    <section className="py-1 bg-white relative overflow-hidden">
-      {/* AI Grid Background */}
-      <div className="absolute inset-0 opacity-5">
-        <div
-          className="w-full h-full"
-          style={{
-            backgroundImage: `
-              linear-gradient(rgba(51, 154, 240, 0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(51, 154, 240, 0.1) 1px, transparent 1px)
-            `,
-            backgroundSize: "50px 50px",
-          }}
-        ></div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <section className="py-10 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center px-4 py-2 bg-dodger-blue/10 rounded-full text-sm font-medium text-dodger-blue mb-6">
-            <Bot className="w-4 h-4 mr-2 animate-pulse" />
-            AI-Powered Features
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Everything you need to scale outreach with <span className="text-dodger-blue">AI</span>
-          </h2>
+          <h2 className="text-4xl font-semibold text-gray-900 mb-6">How JOTIQ Works</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Advanced artificial intelligence that transforms manual prospecting into automated success
+            Advanced AI automation that learns from your best practices and continuously improves your results
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="group relative bg-white rounded-2xl p-8 border border-gray-100 hover:border-dodger-blue/30 hover:shadow-xl transition-all duration-500 animate-slide-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              {/* AI Glow Effect */}
+        {/* Features Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
+          {features.map((feature, index) => {
+            const colors = getColorClasses(feature.color)
+            return (
               <div
-                className={`absolute inset-0 bg-gradient-to-r ${feature.gradient} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-500`}
-              ></div>
-
-              <div className="flex items-start space-x-4 relative">
-                <div className="flex-shrink-0 relative">
-                  <div
-                    className={`w-14 h-14 bg-gradient-to-r ${feature.gradient} rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}
-                  >
-                    <feature.icon className="h-7 w-7 text-white" />
+                key={index}
+                className={`bg-white rounded-lg p-8 border-2 ${colors.border} ${colors.hover} transition-colors duration-200`}
+              >
+                <div className="flex items-start space-x-6">
+                  <div className="flex-shrink-0">
+                    <div className={`w-12 h-12 ${colors.bg} rounded-lg flex items-center justify-center`}>
+                      <feature.icon className="h-6 w-6 text-white" />
+                    </div>
                   </div>
-                  {/* AI Badge */}
-                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center shadow-sm">
-                    <feature.aiIcon className="w-3 h-3 text-yellow-800" />
-                  </div>
-                </div>
 
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-dodger-blue transition-colors">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed mb-4">{feature.description}</p>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-medium text-gray-900 mb-4">{feature.title}</h3>
+                    <p className="text-gray-600 leading-relaxed mb-6">{feature.description}</p>
 
-                  {/* AI Features */}
-                  <div className="space-y-2">
-                    {feature.aiFeatures.map((aiFeature, aiIndex) => (
-                      <div key={aiIndex} className="flex items-center text-sm text-gray-500">
-                        <Zap className="w-3 h-3 mr-2 text-yellow-500" />
-                        {aiFeature}
-                      </div>
-                    ))}
+                    <div className="space-y-3">
+                      {feature.features.map((item, itemIndex) => (
+                        <div key={itemIndex} className="flex items-center text-sm text-gray-700">
+                          <CheckCircle className="w-4 h-4 mr-3 text-green-600" />
+                          {item}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
-
-              {/* Animated Border */}
-              <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-dodger-blue/20 transition-colors duration-300"></div>
-            </div>
-          ))}
+            )
+          })}
         </div>
 
-        {/* AI Showcase Section */}
-        <div className="mt-24 bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-12 relative overflow-hidden">
-          {/* AI Particles */}
-          <div className="absolute inset-0">
-            {[...Array(20)].map((_, i) => (
-              <div
-                key={i}
-                className="absolute w-1 h-1 bg-dodger-blue rounded-full animate-pulse"
-                style={{
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.random() * 100}%`,
-                  animationDelay: `${Math.random() * 3}s`,
-                  animationDuration: `${2 + Math.random() * 2}s`,
-                }}
-              ></div>
-            ))}
+        {/* Stats Section
+        <div className="bg-gray-50 rounded-lg p-12">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl font-medium text-gray-900 mb-4">
+              Trusted by recruitment and business development professionals
+            </h3>
+            <p className="text-lg text-gray-600">See the impact JOTIQ makes on outreach performance</p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative">
-            <div>
-              <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium text-white mb-6">
-                <Sparkles className="w-4 h-4 mr-2 text-yellow-400" />
-                AI in Action
-              </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">Watch AI Transform Your Outreach</h3>
-              <p className="text-lg text-gray-300 mb-8">
-                See how our advanced AI algorithms analyze, personalize, and optimize every aspect of your outreach
-                campaigns in real-time.
-              </p>
-
-              <div className="space-y-4">
-                {[
-                  { icon: Brain, text: "AI analyzes prospect behavior patterns" },
-                  { icon: Sparkles, text: "Generates personalized content instantly" },
-                  { icon: Zap, text: "Optimizes send times automatically" },
-                  { icon: BarChart3, text: "Provides predictive insights" },
-                ].map((item, index) => (
-                  <div key={index} className="flex items-center text-white">
-                    <div className="w-8 h-8 bg-dodger-blue/20 rounded-lg flex items-center justify-center mr-3">
-                      <item.icon className="w-4 h-4 text-dodger-blue" />
-                    </div>
-                    <span>{item.text}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* AI Dashboard Mockup */}
-            <div className="relative">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="text-white font-medium flex items-center">
-                    <Bot className="w-5 h-5 mr-2 text-dodger-blue" />
-                    AI Dashboard
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                    <span className="text-xs text-gray-300">AI Active</span>
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {[
+              { value: "10,000+", label: "Active users", color: "blue" },
+              { value: "94.7%", label: "Accuracy rate", color: "green" },
+              { value: "247%", label: "Conversion lift", color: "orange" },
+              { value: "15hrs", label: "Saved per week", color: "blue" },
+            ].map((stat, index) => {
+              const colors = getColorClasses(stat.color)
+              return (
+                <div key={index} className="text-center">
+                  <div className={`text-3xl font-semibold ${colors.text} mb-2`}>{stat.value}</div>
+                  <div className="text-sm text-gray-600">{stat.label}</div>
                 </div>
-
-                <div className="space-y-3">
-                  <div className="bg-white/5 rounded-lg p-3">
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-300">AI Writing Progress</span>
-                      <span className="text-sm text-dodger-blue">87%</span>
-                    </div>
-                    <div className="w-full bg-white/10 rounded-full h-2 mt-2">
-                      <div className="bg-dodger-blue h-2 rounded-full animate-pulse" style={{ width: "87%" }}></div>
-                    </div>
-                  </div>
-
-                  <div className="bg-white/5 rounded-lg p-3">
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-300">Prospects Analyzed</span>
-                      <span className="text-sm text-green-400">1,247</span>
-                    </div>
-                  </div>
-
-                  <div className="bg-white/5 rounded-lg p-3">
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-300">AI Confidence Score</span>
-                      <span className="text-sm text-yellow-400">94%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              )
+            })}
           </div>
-        </div>
+        </div> */}
+
+        {/* CTA Section
+        <div className="text-center mt-20">
+          <h3 className="text-2xl font-medium text-gray-900 mb-6">Ready to transform your outreach?</h3>
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            Join thousands of professionals who are already using JOTIQ to automate their client outreach and save hours
+            every day.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+              Start For Free
+            </button>
+            <button className="text-blue-600 border border-blue-600 bg-white px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors">
+              See Plans
+            </button>
+          </div> */}
+        {/* </div> */}
       </div>
     </section>
   )

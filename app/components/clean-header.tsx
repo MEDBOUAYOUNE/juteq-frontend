@@ -6,22 +6,24 @@ export default function CleanHeader() {
     <header className="bg-smoke-white border-b border-gray-100 sticky  top-0 z-50 backdrop-blur-sm bg-white/95">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center h-20">
+          <div className="flex items-center space-x-6">
           {/* Logo */}
           <div className="flex-shrink-0 py-5">
-        <Link href="/">
-          {/* <a className="flex items-center"> */}
-            <img
-              src="/logo.png"
-              alt="JOTIQ Logo"
-              className="h-8 w-auto mr-3"
-            />
-            {/* Optional brand text */}
-            {/* <span className="text-xl font-semibold text-gray-900">JOTIQ</span> */}
-          {/* </a> */}
-        </Link>
-      </div>
-          {/* Desktop Navigation */}
-          <nav className="hidden gap md:flex items-center space-x-8">
+          <Link href="/">
+            {/* <a className="flex items-center"> */}
+              <img
+                src="/logo.png"
+                alt="JOTIQ Logo"
+                className="h-8 w-auto"
+              />
+              {/* Optional brand text */}
+              {/* <span className="text-xl font-semibold text-gray-900">JOTIQ</span> */}
+            {/* </a> */}
+          </Link>
+          </div>
+
+        <div>
+        <nav className="hidden gap md:flex items-center space-x-8">
             <Link href="/products" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
               Products
             </Link>
@@ -144,18 +146,24 @@ export default function CleanHeader() {
               Pricing
             </Link>
           </nav>
+          </div>
+
+      </div>
 
           {/* CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Link href="/login" className="bg-gray-900 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-gray-800 transition-colors">
-              Login
-            </Link>
-            <Link
-              href="/signup"
-              className="bg-gray-900 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-gray-800 transition-colors"
-            >
-              Start For Free
-            </Link>
+          <div className="hidden md:flex items-center space-x-3">
+              <Link
+                href="/Login"
+                className="text-[#1A8CFF] border border-[#1A8CFF] bg-white px-4 py-2 rounded-lg font-normal hover:bg-blue-50 transition-colors"
+              >
+                Sign In
+              </Link>
+               <Link
+                href="/signup"
+                className="bg-[#1A8CFF] border text-white px-4 py-2 rounded-lg font-normal hover:bg-blue-700 transition-colors"
+              >
+                Start For Free
+              </Link>
           </div>
 
           {/* Mobile menu button */}

@@ -2,7 +2,7 @@ import CleanHeader from "./components/clean-header"
 import AIHero from "./components/ai-hero"
 import AIFeatures from "./components/ai-features"
 import AITestimonials from "./components/ai-testimonials"
-import MinimalPricing from "./components/minimal-pricing"
+import PricingSection from "./components/pricing-section"
 import HowItWorks from "./components/how-it-works"
 import MinimalCTA from "./components/minimal-cta"
 import MinimalFooter from "./components/minimal-footer"
@@ -13,10 +13,10 @@ export default function Home() {
       {/* <CleanHeader /> */}
       <AIHero />
       <AIFeatures />
-      <MinimalPricing />
-      <HowItWorks />
+      <PricingSection />
+      {/* <HowItWorks />
       <AITestimonials />
-      <MinimalCTA />
+      <MinimalCTA /> */}
       {/* <MinimalFooter /> */}
     </main>
   )
