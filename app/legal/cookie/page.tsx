@@ -5,14 +5,14 @@ export default function CookiePolicyPage() {
     <main className="min-h-screen bg-white">
       {/* Header */}
       <section className="py-12">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-5xl font-medium text-black mb-4 text-center">JOTIQ Cookie Policy</h1>
         </div>
       </section>
 
       {/* Content */}
       <section className="py-12">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-600 text-sm mb-6">
               <strong>Effective Date:</strong> 09/01/2025

@@ -12,7 +12,7 @@ export default function TermsOfUsePage() {
 
       {/* Content */}
       <section className="py-12">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-600 text-sm mb-6">
               <strong>Last Updated:</strong> 09/01/2025

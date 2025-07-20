@@ -15,8 +15,8 @@ export default function Home() {
       <AIFeatures />
       <PricingSection />
       {/* <HowItWorks />
-      <AITestimonials />
-      <MinimalCTA /> */}
+      <AITestimonials /> */}
+      {/* <MinimalCTA /> */}
       {/* <MinimalFooter /> */}
     </main>
   )

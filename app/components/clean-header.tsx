@@ -1,178 +1,320 @@
+"use client"
+
 import Link from "next/link"
-import { ChevronDown } from "lucide-react"
+import { 
+  ChevronDown, 
+  Menu, 
+  X, 
+  Send, 
+  Phone, 
+  Users, 
+  Upload, 
+  Palette, 
+  BarChart3, 
+  MessageSquare, 
+  Puzzle,
+  HelpCircle,
+  BookOpen,
+  Zap,
+  Lightbulb,
+  Headphones,
+  Mail
+} from "lucide-react"
+import { useState, useEffect, useRef } from "react"
 
 export default function CleanHeader() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
+  const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState<string | null>(null)
+  const menuRef = useRef<HTMLDivElement>(null)
+
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMobileMenuOpen(false)
+        setActiveDropdown(null)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
+
+  // Close mobile menu when window resizes to desktop
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setIsMobileMenuOpen(false)
+        setIsMobileDropdownOpen(null)
+      }
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+    setIsMobileDropdownOpen(null)
+  }
+
+  const toggleMobileDropdown = (dropdown: string) => {
+    setIsMobileDropdownOpen(isMobileDropdownOpen === dropdown ? null : dropdown)
+  }
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false)
+    setIsMobileDropdownOpen(null)
+  }
+
+  const solutionsLinks = [
+    { href: "/solutions/automated-outreach", label: "Automated outreach", icon: Send },
+    { href: "/solutions/ai-cold-calling", label: "AI-Powered Cold Calling", icon: Phone },
+    { href: "/solutions/lead-generation", label: "Instant Lead Generation", icon: Users },
+    { href: "/solutions/smart-data-upload-extraction", label: "Smart Data Upload & Extraction", icon: Upload },
+    { href: "/solutions/branded-content-upload", label: "Branded Content Upload", icon: Palette },
+    { href: "/solutions/sales-analytics", label: "Sales Analytics", icon: BarChart3 },
+    { href: "/solutions/conversation-intelligence", label: "Conversation Intelligence", icon: MessageSquare },
+    { href: "/solutions/integrations", label: "Integrations", icon: Puzzle },
+  ]
+
+  const resourcesLinks = [
+    { href: "/help", label: "Help Center", icon: HelpCircle },
+    { href: "/blog", label: "Blog", icon: BookOpen },
+    { href: "/updates", label: "Product Updates", icon: Zap },
+    { href: "/idea-box", label: "Idea Box", icon: Lightbulb },
+    { href: "/support", label: "Customer Support", icon: Headphones },
+    { href: "/contact", label: "Contact Us", icon: Mail },
+  ]
+
   return (
-    <header className="bg-smoke-white border-b border-gray-100 sticky  top-0 z-50 backdrop-blur-sm bg-white/95">
-      <div className="max-w-7xl mx-auto">
+    <header className="bg-white/95 border-b border-gray-100 sticky top-0 z-50 backdrop-blur-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-6">
-          {/* Logo */}
-          <div className="flex-shrink-0 py-5">
-          <Link href="/">
-            {/* <a className="flex items-center"> */}
-              <img
-                src="/logo.png"
-                alt="JOTIQ Logo"
-                className="h-8 w-auto"
-              />
-              {/* Optional brand text */}
-              {/* <span className="text-xl font-semibold text-gray-900">JOTIQ</span> */}
-            {/* </a> */}
-          </Link>
-          </div>
-
-        <div>
-        <nav className="hidden gap md:flex items-center space-x-8">
-            <Link href="/products" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
-              Products
-            </Link>
-
-            {/* Solutions Dropdown */}
-            <div className="relative group">
-              <button className="flex items-center text-gray-600 hover:text-gray-900 font-medium transition-colors">
-                Solutions
-                <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <div className="py-3">
-                  <Link
-                    href="/automated-outreach"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-dodger-blue transition-colors"
-                  >
-                    Automated outreach
-                  </Link>
-                  <Link
-                    href="/ai-cold-calling"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-dodger-blue transition-colors"
-                  >
-                    AI-Powered Cold Calling
-                  </Link>
-                  <Link
-                    href="/lead-generation"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-dodger-blue transition-colors"
-                  >
-                    Instant Lead Generation
-                  </Link>
-                  <Link
-                    href="/smart-data-upload-extraction"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-dodger-blue transition-colors"
-                  >
-                    Smart Data Upload & Extraction 
-                  </Link>
-                  <Link
-                    href="/branded-content-upload"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-dodger-blue transition-colors"
-                  >
-                    Branded Content Upload 
-                  </Link>
-                  <Link
-                    href="/sales-analytics"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-dodger-blue transition-colors"
-                  >
-                    Sales Analytics 
-                  </Link>
-                  <Link
-                    href="/conversation-intelligence"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-dodger-blue transition-colors"
-                  >
-                    Conversation Intelligence
-                  </Link>
-                  <Link
-                    href="/integrations"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-dodger-blue transition-colors"
-                  >
-                    Integrations
-                  </Link>
-                </div>
-              </div>
+            {/* Logo */}
+            <div className="flex-shrink-0 py-5">
+              <Link href="/">
+                <img
+                  src="/logo.png"
+                  alt="JOTIQ Logo"
+                  className="h-8 w-auto"
+                />
+              </Link>
             </div>
 
-            {/* Resources Dropdown */}
-            <div className="relative group">
-              <button className="flex items-center text-gray-600 hover:text-gray-900 font-medium transition-colors">
-                Resources
-                <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
-              <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <div className="py-3">
-                  <Link
-                    href="/help"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-dodger-blue transition-colors"
-                  >
-                    Help Center
-                  </Link>
-                  <Link
-                    href="/blog"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-dodger-blue transition-colors"
-                  >
-                    Blog
-                  </Link>
-                  <Link
-                    href="/updates"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-dodger-blue transition-colors"
-                  >
-                    Product Updates
-                  </Link>
-                  <Link
-                    href="/idea-box"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-dodger-blue transition-colors"
-                  >
-                    Idea Box
-                  </Link>
-                  {/* <Link
-                    href="/integrations"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-dodger-blue transition-colors"
-                  >
-                    Integrations
-                  </Link> */}
-                  <Link
-                    href="/support"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-dodger-blue transition-colors"
-                  >
-                    Customer Support
-                  </Link>
-                  <Link
-                    href="/contact"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-dodger-blue transition-colors"
-                  >
-                    Contact Us
-                  </Link>
-                </div>
-              </div>
-            </div>
+            <div>
+              {/* Desktop Navigation */}
+              <nav className="hidden lg:flex items-center space-x-8">
+                <Link 
+                  href="/products" 
+                  className="text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200"
+                >
+                  Products
+                </Link>
 
-            <Link href="/pricing" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
-              Pricing
-            </Link>
-          </nav>
+                {/* Solutions Dropdown */}
+                <div 
+                  className="relative group"
+                  onMouseEnter={() => setActiveDropdown('solutions')}
+                  onMouseLeave={() => setActiveDropdown(null)}
+                >
+                  <button className="flex items-center text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">
+                    Solutions
+                    <ChevronDown className={`ml-1 h-4 w-4 transition-transform duration-200 ${activeDropdown === 'solutions' ? 'rotate-180' : ''}`} />
+                  </button>
+                  <div className={`absolute top-full left-0 mt-2 w-72 bg-white rounded-xl shadow-lg border border-gray-100 transition-all duration-200 ${activeDropdown === 'solutions' ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-2'}`}>
+                    <div className="py-3">
+                      {solutionsLinks.map((link, index) => {
+                        const IconComponent = link.icon
+                        return (
+                          <Link
+                            key={index}
+                            href={link.href}
+                            className="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1A8CFF] transition-colors duration-200 group"
+                          >
+                            <IconComponent className="h-4 w-4 mr-3 text-[#1A8CFF] group-hover:text-[#1A8CFF]" />
+                            {link.label}
+                          </Link>
+                        )
+                      })}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Resources Dropdown */}
+                <div 
+                  className="relative group"
+                  onMouseEnter={() => setActiveDropdown('resources')}
+                  onMouseLeave={() => setActiveDropdown(null)}
+                >
+                  <button className="flex items-center text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">
+                    Resources
+                    <ChevronDown className={`ml-1 h-4 w-4 transition-transform duration-200 ${activeDropdown === 'resources' ? 'rotate-180' : ''}`} />
+                  </button>
+                  <div className={`absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-gray-100 transition-all duration-200 ${activeDropdown === 'resources' ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-2'}`}>
+                    <div className="py-3">
+                      {resourcesLinks.map((link, index) => {
+                        const IconComponent = link.icon
+                        return (
+                          <Link
+                            key={index}
+                            href={link.href}
+                            className="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1A8CFF] transition-colors duration-200 group"
+                          >
+                            <IconComponent className="h-4 w-4 mr-3 text-[#1A8CFF] group-hover:text-[#1A8CFF]" />
+                            {link.label}
+                          </Link>
+                        )
+                      })}
+                    </div>
+                  </div>
+                </div>
+
+                <Link 
+                  href="/pricing" 
+                  className="text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200"
+                >
+                  Pricing
+                </Link>
+              </nav>
+            </div>
           </div>
 
-      </div>
+          {/* Desktop CTA Buttons */}
+          <div className="hidden lg:flex items-center space-x-4">
+            <Link
+                href="/Login"
+                className="group relative text-[#1A8CFF] border-2 border-[#1A8CFF] bg-white min-w-[140px] text-center px-6 py-3 rounded-lg font-semibold text-base hover:bg-blue-50 hover:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-300 ease-out hover:shadow-md hover:shadow-blue-500/15 transform hover:-translate-y-0.5"
+              >
+                <span className="transition-all duration-300 group-hover:translate-x-0.5">Sign In</span>
+              </Link>
+              
+              <Link
+                href="/signup"
+                className="group relative bg-[#1A8CFF] border-2 border-[#1A8CFF] text-white min-w-[140px] text-center px-6 py-3 rounded-lg font-semibold text-base hover:bg-blue-700 hover:border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-300 ease-out hover:shadow-md hover:shadow-blue-600/20 transform hover:-translate-y-0.5"
+              >
+                <span className="transition-all duration-300 group-hover:translate-x-0.5">Start For Free</span>
+            </Link>
+          </div>
 
-          {/* CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-3">
+
+          {/* Mobile menu button */}
+          <div className="lg:hidden">
+            <button 
+              onClick={toggleMobileMenu}
+              className="text-gray-600 hover:text-gray-900 transition-colors duration-200 p-2"
+              aria-label="Toggle mobile menu"
+            >
+              {isMobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Navigation */}
+        <div 
+          ref={menuRef}
+          className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}
+        >
+          <div className="py-4 border-t border-gray-100">
+            <div className="space-y-1">
+              <Link 
+                href="/products"
+                onClick={closeMobileMenu}
+                className="block px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium transition-colors duration-200 rounded-lg mx-2"
+              >
+                Products
+              </Link>
+
+              {/* Mobile Solutions Dropdown */}
+              <div className="px-2">
+                <button
+                  onClick={() => toggleMobileDropdown('solutions')}
+                  className="flex items-center justify-between w-full px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium transition-colors duration-200 rounded-lg"
+                >
+                  Solutions
+                  <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMobileDropdownOpen === 'solutions' ? 'rotate-180' : ''}`} />
+                </button>
+                <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isMobileDropdownOpen === 'solutions' ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+                  <div className="pl-4 py-2 space-y-1">
+                    {solutionsLinks.map((link, index) => {
+                      const IconComponent = link.icon
+                      return (
+                        <Link
+                          key={index}
+                          href={link.href}
+                          onClick={closeMobileMenu}
+                          className="flex items-center px-4 py-2 text-sm text-gray-600 hover:text-[#1A8CFF] hover:bg-gray-50 transition-colors duration-200 rounded-lg group"
+                        >
+                          <IconComponent className="h-4 w-4 mr-3 text-[#1A8CFF] group-hover:text-[#1A8CFF]" />
+                          {link.label}
+                        </Link>
+                      )
+                    })}
+                  </div>
+                </div>
+              </div>
+
+              {/* Mobile Resources Dropdown */}
+              <div className="px-2">
+                <button
+                  onClick={() => toggleMobileDropdown('resources')}
+                  className="flex items-center justify-between w-full px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium transition-colors duration-200 rounded-lg"
+                >
+                  Resources
+                  <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMobileDropdownOpen === 'resources' ? 'rotate-180' : ''}`} />
+                </button>
+                <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isMobileDropdownOpen === 'resources' ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+                  <div className="pl-4 py-2 space-y-1">
+                    {resourcesLinks.map((link, index) => {
+                      const IconComponent = link.icon
+                      return (
+                        <Link
+                          key={index}
+                          href={link.href}
+                          onClick={closeMobileMenu}
+                          className="flex items-center px-4 py-2 text-sm text-gray-600 hover:text-[#1A8CFF] hover:bg-gray-50 transition-colors duration-200 rounded-lg group"
+                        >
+                          <IconComponent className="h-4 w-4 mr-3 text-[#1A8CFF] group-hover:text-[#1A8CFF]" />
+                          {link.label}
+                        </Link>
+                      )
+                    })}
+                  </div>
+                </div>
+              </div>
+
+              <Link 
+                href="/pricing"
+                onClick={closeMobileMenu}
+                className="block px-4 py-3 text-gray-600 hover:text-gray-900 ho:bg-gray-5ver0 font-medium transition-colors duration-200 rounded-lg mx-2"
+              >
+                Pricing
+              </Link>
+            </div>
+
+            {/* Mobile CTA Buttons */}
+            <div className="mt-6 px-2 space-y-3">
               <Link
                 href="/Login"
-                className="text-[#1A8CFF] border border-[#1A8CFF] bg-white px-4 py-2 rounded-lg font-normal hover:bg-blue-50 transition-colors"
+                onClick={closeMobileMenu}
+                className="block w-full text-center text-[#1A8CFF] border-2 border-[#1A8CFF] bg-white px-4 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors duration-200"
               >
                 Sign In
               </Link>
-               <Link
+              <Link
                 href="/signup"
-                className="bg-[#1A8CFF] border text-white px-4 py-2 rounded-lg font-normal hover:bg-blue-700 transition-colors"
+                onClick={closeMobileMenu}
+                className="block w-full text-center bg-[#1A8CFF] border text-white px-4 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200"
               >
                 Start For Free
               </Link>
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button className="text-gray-600">
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+            </div>
           </div>
         </div>
       </div>
