@@ -69,7 +69,7 @@ export default function CleanHeader() {
   }
 
   const solutionsLinks = [
-    { href: "/solutions/automated-outreach", label: "Automated outreach", icon: Send },
+    { href: "/solutions/automated-outreach", label: "Automate Your Client Outreach", icon: Send },
     { href: "/solutions/ai-cold-calling", label: "AI-Powered Cold Calling", icon: Phone },
     { href: "/solutions/lead-generation", label: "Instant Lead Generation", icon: Users },
     { href: "/solutions/smart-data-upload-extraction", label: "Smart Data Upload & Extraction", icon: Upload },
@@ -132,9 +132,9 @@ export default function CleanHeader() {
                           <Link
                             key={index}
                             href={link.href}
-                            className="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1A8CFF] transition-colors duration-200 group"
+                            className="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0075DE] transition-colors duration-200 group"
                           >
-                            <IconComponent className="h-4 w-4 mr-3 text-[#1A8CFF] group-hover:text-[#1A8CFF]" />
+                            <IconComponent className="h-4 w-4 mr-3 text-[#0075DE] group-hover:text-[#0075DE]" />
                             {link.label}
                           </Link>
                         )
@@ -161,9 +161,9 @@ export default function CleanHeader() {
                           <Link
                             key={index}
                             href={link.href}
-                            className="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#1A8CFF] transition-colors duration-200 group"
+                            className="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0075DE] transition-colors duration-200 group"
                           >
-                            <IconComponent className="h-4 w-4 mr-3 text-[#1A8CFF] group-hover:text-[#1A8CFF]" />
+                            <IconComponent className="h-4 w-4 mr-3 text-[#0075DE] group-hover:text-[#0075DE]" />
                             {link.label}
                           </Link>
                         )
@@ -186,14 +186,14 @@ export default function CleanHeader() {
           <div className="hidden lg:flex items-center space-x-4">
             <Link
                 href="/Login"
-                className="group relative text-[#1A8CFF] border-2 border-[#1A8CFF] bg-white min-w-[140px] text-center px-6 py-3 rounded-lg font-semibold text-base hover:bg-blue-50 hover:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-300 ease-out hover:shadow-md hover:shadow-blue-500/15 transform hover:-translate-y-0.5"
+                className="group relative text-[#0075DE]  bg-white text-center px-6 py-2 rounded-lg font-medium text-base hover:bg-blue-50 hover:border-blue-600"
               >
                 <span className="transition-all duration-300 group-hover:translate-x-0.5">Sign In</span>
               </Link>
               
               <Link
                 href="/signup"
-                className="group relative bg-[#1A8CFF] border-2 border-[#1A8CFF] text-white min-w-[140px] text-center px-6 py-3 rounded-lg font-semibold text-base hover:bg-blue-700 hover:border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-300 ease-out hover:shadow-md hover:shadow-blue-600/20 transform hover:-translate-y-0.5"
+                className="group relative bg-[#0075DE] text-white text-center px-6 py-2 rounded-lg font-medium text-base hover:bg-blue-700 hover:border-blue-700"
               >
                 <span className="transition-all duration-300 group-hover:translate-x-0.5">Start For Free</span>
             </Link>
@@ -226,7 +226,7 @@ export default function CleanHeader() {
               <Link 
                 href="/products"
                 onClick={closeMobileMenu}
-                className="block px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium transition-colors duration-200 rounded-lg mx-2"
+                className="block px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium transition-colors duration-200  mx-2"
               >
                 Products
               </Link>
@@ -235,7 +235,7 @@ export default function CleanHeader() {
               <div className="px-2">
                 <button
                   onClick={() => toggleMobileDropdown('solutions')}
-                  className="flex items-center justify-between w-full px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium transition-colors duration-200 rounded-lg"
+                  className="flex items-center justify-between w-full px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium transition-colors duration-200 "
                 >
                   Solutions
                   <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMobileDropdownOpen === 'solutions' ? 'rotate-180' : ''}`} />
@@ -249,9 +249,9 @@ export default function CleanHeader() {
                           key={index}
                           href={link.href}
                           onClick={closeMobileMenu}
-                          className="flex items-center px-4 py-2 text-sm text-gray-600 hover:text-[#1A8CFF] hover:bg-gray-50 transition-colors duration-200 rounded-lg group"
+                          className="flex items-center px-4 py-2 text-sm text-gray-600 hover:text-[#0075DE] hover:bg-gray-50 transition-colors duration-200 rounded-lg group"
                         >
-                          <IconComponent className="h-4 w-4 mr-3 text-[#1A8CFF] group-hover:text-[#1A8CFF]" />
+                          <IconComponent className="h-4 w-4 mr-3 text-[#0075DE] group-hover:text-[#0075DE]" />
                           {link.label}
                         </Link>
                       )
@@ -278,9 +278,9 @@ export default function CleanHeader() {
                           key={index}
                           href={link.href}
                           onClick={closeMobileMenu}
-                          className="flex items-center px-4 py-2 text-sm text-gray-600 hover:text-[#1A8CFF] hover:bg-gray-50 transition-colors duration-200 rounded-lg group"
+                          className="flex items-center px-4 py-2 text-sm text-gray-600 hover:text-[#0075DE] hover:bg-gray-50 transition-colors duration-200 rounded-lg group"
                         >
-                          <IconComponent className="h-4 w-4 mr-3 text-[#1A8CFF] group-hover:text-[#1A8CFF]" />
+                          <IconComponent className="h-4 w-4 mr-3 text-[#0075DE] group-hover:text-[#0075DE]" />
                           {link.label}
                         </Link>
                       )
@@ -303,14 +303,14 @@ export default function CleanHeader() {
               <Link
                 href="/Login"
                 onClick={closeMobileMenu}
-                className="block w-full text-center text-[#1A8CFF] border-2 border-[#1A8CFF] bg-white px-4 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors duration-200"
+                className="block w-full text-center text-[#0075DE]  bg-white px-6 py-3 rounded-lg font-medium text-base hover:bg-blue-50 transition-colors duration-200"
               >
                 Sign In
               </Link>
               <Link
                 href="/signup"
                 onClick={closeMobileMenu}
-                className="block w-full text-center bg-[#1A8CFF] border text-white px-4 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200"
+                className="block w-full text-center bg-[#0075DE] text-white px-6 py-3 rounded-lg font-medium text-base hover:bg-blue-700 transition-colors duration-200"
               >
                 Start For Free
               </Link>

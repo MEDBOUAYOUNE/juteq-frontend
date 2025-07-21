@@ -57,13 +57,11 @@ export default function MinimalFooter() {
                     Pricing
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     href="/sign-in"
                     className="text-[#E5E5E5] hover:text-white hover:underline transition-colors text-sm"
                   >
-                    {" "}
-                    {/* Changed text color, added underline hover */}
                     Sign In
                   </Link>
                 </li>
@@ -72,11 +70,9 @@ export default function MinimalFooter() {
                     href="/signup"
                     className="text-[#E5E5E5] hover:text-white hover:underline transition-colors text-sm"
                   >
-                    {" "}
-                    {/* Changed text color, added underline hover */}
                     Start For Free
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             {/* Resources */}
