@@ -6,7 +6,7 @@ export default function CookiePolicyPage() {
       {/* Header */}
       <section className="py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl font-medium text-black mb-4 text-center">JOTIQ Cookie Policy</h1>
+          <h1 className="text-5xl font-bold text-black mb-4 text-center">JOTIQ Cookie Policy</h1>
         </div>
       </section>
 
@@ -18,16 +18,16 @@ export default function CookiePolicyPage() {
               <strong>Effective Date:</strong> 09/01/2025
             </p>
 
-            <div className="mb-6">
-              <p className="text-gray-700 leading-relaxed">
+            <div className="">
+              <p className="text-gray-700 leading-relaxed mb-6">
                 JOTIQ uses cookies and similar tracking technologies to enhance your experience, improve our website
                 performance, and analyze website traffic.
               </p>
             </div>
 
             {/* Section 1 */}
-            <section id="what-are-cookies" className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">
+            <section className="mb-12">
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">
                 1. What Are Cookies?
               </h2>
               <div className="text-gray-700 leading-relaxed">
@@ -39,13 +39,13 @@ export default function CookiePolicyPage() {
             </section>
 
             {/* Section 2 */}
-            <section id="types-of-cookies" className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">
+            <section className="mb-12">
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">
                 2. Types of Cookies We Use
               </h2>
               <div className="text-gray-700 leading-relaxed space-y-4">
                 <p>We use the following types of cookies:</p>
-                <ul className="space-y-4 list-disc pl-6">
+                <ul className="space-y-3 list-disc pl-6">
                   <li>
                     <strong>Essential Cookies:</strong> These cookies are strictly necessary to provide you with
                     services available through our website. Without these cookies, the website may not function
@@ -69,8 +69,8 @@ export default function CookiePolicyPage() {
             </section>
 
             {/* Section 3 */}
-            <section id="cookie-consent" className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">3. Cookie Consent</h2>
+            <section className="mb-12">
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">3. Cookie Consent</h2>
               <div className="text-gray-700 leading-relaxed space-y-4">
                 <p>When you visit our website, you will be presented with a cookie consent banner.</p>
                 <p>You can:</p>
@@ -80,15 +80,15 @@ export default function CookiePolicyPage() {
                   <li>Reject non-essential cookies.</li>
                 </ul>
                 <p>You can also manage or delete cookies at any time by adjusting your browser settings.</p>
-                <p className="font-medium text-black">
+                <p className="font-bold text-black">
                   Important: Essential cookies cannot be disabled as they are required for basic website functionality.
                 </p>
               </div>
             </section>
 
             {/* Section 4 */}
-            <section id="third-party-cookies" className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">
+            <section className="mb-12">
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">
                 4. Third-Party Cookies
               </h2>
               <div className="text-gray-700 leading-relaxed space-y-4">
@@ -114,8 +114,8 @@ export default function CookiePolicyPage() {
             </section>
 
             {/* Section 5 */}
-            <section id="data-transfers" className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">5. Data Transfers</h2>
+            <section className="mb-12">
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">5. Data Transfers</h2>
               <div className="text-gray-700 leading-relaxed">
                 <p>
                   Some cookies may result in the transfer of your data to countries outside your jurisdiction, including
@@ -125,8 +125,8 @@ export default function CookiePolicyPage() {
             </section>
 
             {/* Section 6 */}
-            <section id="changes-to-policy" className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">
+            <section className="mb-12">
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">
                 6. Changes to This Policy
               </h2>
               <div className="text-gray-700 leading-relaxed">
@@ -138,8 +138,8 @@ export default function CookiePolicyPage() {
             </section>
 
             {/* Section 7 */}
-            <section id="contact-us" className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">7. Contact Us</h2>
+            <section className="mb-12">
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">7. Contact Us</h2>
               <div className="text-gray-700 leading-relaxed">
                 <p>
                   For questions or requests regarding this Cookie Policy, please contact us at:{" "}

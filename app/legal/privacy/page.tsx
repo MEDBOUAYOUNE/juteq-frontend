@@ -7,7 +7,7 @@ export default function PrivacyPolicyPage() {
       {/* Header */}
        <section className="py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-         <h1 className="text-5xl font-medium center text-black mb-4 text-center">JOTIQ Privacy Policy</h1>
+         <h1 className="text-5xl font-bold center text-black mb-4 text-center">JOTIQ Privacy Policy</h1>
          {/* <p className="text-gray-600 mb-5">Last Updated: 09/01/2025</p> */}
          </div >
 
@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Section 1 */}
             <section className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">
                 1. Information We Collect
               </h2>
               <div className="text-gray-700 leading-relaxed space-y-4">
@@ -54,7 +54,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Section 2 */}
             <section className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">
                 2. How We Use Your Information
               </h2>
               <div className="text-gray-700 leading-relaxed space-y-4">
@@ -72,7 +72,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Section 3 */}
             <section className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">
                 3. International Data Transfers
               </h2>
               <div className="text-gray-700 leading-relaxed">
@@ -87,7 +87,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Section 4 */}
             <section className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">
                 4. Legal Basis for Processing (GDPR Compliance)
               </h2>
               <div className="text-gray-700 leading-relaxed space-y-4">
@@ -103,7 +103,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Section 5 */}
             <section className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">
                 5. User Responsibilities
               </h2>
               <div className="text-gray-700 leading-relaxed space-y-4">
@@ -121,7 +121,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Section 6 */}
             <section className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">6. Data Sharing</h2>
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">6. Data Sharing</h2>
               <div className="text-gray-700 leading-relaxed space-y-4">
                 <p>We may share your information with:</p>
                 <ul className="space-y-2 list-disc pl-6">
@@ -132,13 +132,13 @@ export default function PrivacyPolicyPage() {
                     Legal authorities if required to comply with applicable laws, regulations, or valid legal processes.
                   </li>
                 </ul>
-                <p className="font-medium text-black">We do not sell your personal data.</p>
+                <p className="font-bold text-black">We do not sell your personal data.</p>
               </div>
             </section>
 
             {/* Section 7 */}
             <section className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">7. Your Rights</h2>
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">7. Your Rights</h2>
               <div className="text-gray-700 leading-relaxed space-y-4">
                 <p>Depending on your location, you may have the right to:</p>
                 <ul className="space-y-2 list-disc pl-6">
@@ -159,7 +159,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Section 8 */}
             <section className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">8. Data Security</h2>
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">8. Data Security</h2>
               <div className="text-gray-700 leading-relaxed">
                 <p>
                   We implement commercially reasonable and industry-standard security measures to protect your personal
@@ -170,7 +170,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Section 9 */}
             <section className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">9. Data Retention</h2>
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">9. Data Retention</h2>
               <div className="text-gray-700 leading-relaxed">
                 <p>
                   We retain your personal data only as long as necessary to fulfill the purposes outlined in this
@@ -181,7 +181,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Section 10 */}
             <section className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">
                 10. Changes to This Policy
               </h2>
               <div className="text-gray-700 leading-relaxed">
@@ -194,7 +194,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Section 11 */}
             <section className="mb-12">
-              <h2 className="text-xl font-medium text-black mb-6 border-b border-gray-200 pb-2">11. Contact</h2>
+              <h2 className="text-xl font-bold text-black mb-6 border-b border-gray-200 pb-2">11. Contact</h2>
               <div className="text-gray-700 leading-relaxed">
                 <p>
                   For any questions, concerns, or requests regarding your personal data, please contact us at:{" "}
@@ -207,7 +207,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Contact Section */}
             {/* <div className="mt-16 pt-8 border-t border-gray-200">
-              <h3 className="text-lg font-medium text-black mb-4">Questions about this Privacy Policy?</h3>
+              <h3 className="text-lg font-bold text-black mb-4">Questions about this Privacy Policy?</h3>
               <p className="text-gray-700 mb-6">
                 If you have any questions or concerns about how we handle your personal data, please contact our privacy
                 team.

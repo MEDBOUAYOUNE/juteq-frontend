@@ -69,14 +69,14 @@ export default function CleanHeader() {
   }
 
   const solutionsLinks = [
-    { href: "/solutions/automated-outreach", label: "Automate Your Client Outreach", icon: Send },
+    { href: "/solutions/automated-outreach", label: "Automate Client Outreach", icon: Send },
     { href: "/solutions/ai-cold-calling", label: "AI-Powered Cold Calling", icon: Phone },
     { href: "/solutions/lead-generation", label: "Instant Lead Generation", icon: Users },
     { href: "/solutions/smart-data-upload-extraction", label: "Smart Data Upload & Extraction", icon: Upload },
     { href: "/solutions/branded-content-upload", label: "Branded Content Upload", icon: Palette },
     { href: "/solutions/sales-analytics", label: "Sales Analytics", icon: BarChart3 },
     { href: "/solutions/conversation-intelligence", label: "Conversation Intelligence", icon: MessageSquare },
-    { href: "/solutions/integrations", label: "Integrations", icon: Puzzle },
+    // { href: "/solutions/integrations", label: "Integrations", icon: Puzzle },
   ]
 
   const resourcesLinks = [
@@ -144,6 +144,19 @@ export default function CleanHeader() {
                 </div>
 
                 {/* Resources Dropdown */}
+
+                <Link 
+                  href="/pricing" 
+                  className="text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200"
+                >
+                  Pricing
+                </Link>
+                <Link 
+                  href="/integrations" 
+                  className="text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200"
+                >
+                  Integrations
+                </Link>
                 <div 
                   className="relative group"
                   onMouseEnter={() => setActiveDropdown('resources')}
@@ -172,12 +185,6 @@ export default function CleanHeader() {
                   </div>
                 </div>
 
-                <Link 
-                  href="/pricing" 
-                  className="text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200"
-                >
-                  Pricing
-                </Link>
               </nav>
             </div>
           </div>
@@ -195,7 +202,7 @@ export default function CleanHeader() {
                 href="/signup"
                 className="group relative bg-[#0075DE] text-white text-center px-6 py-2 rounded-lg font-medium text-base hover:bg-blue-700 hover:border-blue-700"
               >
-                <span className="transition-all duration-300 group-hover:translate-x-0.5">Start For Free</span>
+                <span className="transition-all duration-300 group-hover:translate-x-0.5">Get Started Free</span>
             </Link>
           </div>
 
@@ -269,7 +276,24 @@ export default function CleanHeader() {
                   Resources
                   <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMobileDropdownOpen === 'resources' ? 'rotate-180' : ''}`} />
                 </button>
-                <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isMobileDropdownOpen === 'resources' ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+            
+
+              <Link 
+                href="/pricing"
+                onClick={closeMobileMenu}
+                className="block px-4 py-3 text-gray-600 hover:text-gray-900 ho:bg-gray-5ver0 font-medium transition-colors duration-200 rounded-lg mx-2"
+              >
+                Pricing
+              </Link>
+              <Link 
+                href="/integrations"
+                onClick={closeMobileMenu}
+                className="block px-4 py-3 text-gray-600 hover:text-gray-900 ho:bg-gray-5ver0 font-medium transition-colors duration-200 rounded-lg mx-2"
+              >
+                Integrations
+              </Link>
+
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isMobileDropdownOpen === 'resources' ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                   <div className="pl-4 py-2 space-y-1">
                     {resourcesLinks.map((link, index) => {
                       const IconComponent = link.icon
@@ -288,14 +312,6 @@ export default function CleanHeader() {
                   </div>
                 </div>
               </div>
-
-              <Link 
-                href="/pricing"
-                onClick={closeMobileMenu}
-                className="block px-4 py-3 text-gray-600 hover:text-gray-900 ho:bg-gray-5ver0 font-medium transition-colors duration-200 rounded-lg mx-2"
-              >
-                Pricing
-              </Link>
             </div>
 
             {/* Mobile CTA Buttons */}
@@ -312,7 +328,7 @@ export default function CleanHeader() {
                 onClick={closeMobileMenu}
                 className="block w-full text-center bg-[#0075DE] text-white px-6 py-3 rounded-lg font-medium text-base hover:bg-blue-700 transition-colors duration-200"
               >
-                Start For Free
+                Get Jotiq Free
               </Link>
             </div>
           </div>

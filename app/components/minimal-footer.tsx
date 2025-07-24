@@ -49,6 +49,16 @@ export default function MinimalFooter() {
                 </li>
                 <li>
                   <Link
+                    href="/product-updates"
+                    className="text-[#E5E5E5] hover:text-white hover:underline transition-colors text-sm"
+                  >
+                    {" "}
+                    {/* Changed text color, added underline hover */}
+                    Product Updates
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="/pricing"
                     className="text-[#E5E5E5] hover:text-white hover:underline transition-colors text-sm"
                   >
@@ -99,16 +109,6 @@ export default function MinimalFooter() {
                     {" "}
                     {/* Changed text color, added underline hover */}
                     Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/product-updates"
-                    className="text-[#E5E5E5] hover:text-white hover:underline transition-colors text-sm"
-                  >
-                    {" "}
-                    {/* Changed text color, added underline hover */}
-                    Product Updates
                   </Link>
                 </li>
                 <li>
@@ -176,7 +176,7 @@ export default function MinimalFooter() {
                       <Twitter className="h-5 w-5" />
                       <span className="sr-only">Twitter</span>
                     </Link> */}
-                    <Link href="#" className="text-[#E5E5E5] hover:text-white transition-colors">
+                    <Link href="https://www.linkedin.com/company/jotiq/" className="text-[#E5E5E5] hover:text-white transition-colors">
                       <Linkedin className="h-5 w-5" />
                       <span className="sr-only">LinkedIn</span>
                     </Link>

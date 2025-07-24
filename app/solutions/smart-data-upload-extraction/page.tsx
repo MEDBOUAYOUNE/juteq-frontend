@@ -20,16 +20,16 @@ export default function SolutionPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center relative z-10">
           <h1 className="text-5xl lg:text-5xl sm:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-            AI-Powered Cold Calling
-            {/* <span className="text-blue-600 block">Cold Calling</span> */}
+            Smart Data Upload & Extraction
+            {/* <span className="text-blue-600 block">Data Upload & Extraction</span> */}
           </h1>
           <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto">
-            Automate outbound calls, lead qualification, and meeting scheduling with AI that can
-            handle multiple calls simultaneously while you focus on closing deals.
+            Upload Excel or CSV files with client data and let JOTIQ automatically extract
+            key contact details to build structured client profiles instantly.
           </p>
           <div className="flex justify-center">
             <button className="inline-flex items-center justify-center bg-[#005BAB] text-white px-8 py-4 rounded-lg text-base font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-              See How It Works
+              Try Now
               <ArrowRight className="w-5 h-5 ml-2" />
             </button>
           </div>
@@ -46,15 +46,14 @@ export default function SolutionPage() {
         <div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What it is</h2>
           <p className="text-base text-gray-600 mb-6 leading-relaxed">
-            AI-Powered Cold Calling automates outbound calls, lead qualification, and meeting scheduling.
-            You can customize the AI assistant's profile and script to fit your outreach style. The AI can
-            make multiple calls at the same time, scaling your outreach efforts efficiently.
+            Smart Data Upload & Extraction lets you upload Excel or CSV files with client data, and JOTIQ
+            automatically extracts key contact details to build structured client profiles.
           </p>
         </div>
         <div className="relative flex justify-center items-center">
           <Image
             src="/placeholder.svg?height=400&width=600"
-            alt="AI-Powered Cold Calling Illustration"
+            alt="Smart Data Upload & Extraction Interface Illustration"
             width={300}
             height={200}
             className="rounded-3xl shadow-2xl border border-gray-100 object-cover"
@@ -67,15 +66,15 @@ export default function SolutionPage() {
         <div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">How it works</h2>
           <p className="text-base text-gray-600 mb-6 leading-relaxed">
-            You set up your cold calling campaigns, select your target prospects, and JOTIQ's AI handles
-            the rest. The AI uses either your custom scripts or JOTIQ's default templates to engage, qualify,
-            and schedule meetings with interested prospects.
+            You simply upload your Excel or CSV files and JOTIQ instantly extracts names, emails, and
+            phone numbers, organizing everything into clean client profiles. Manual adjustments are easy if
+            needed.
           </p>
         </div>
         <div className="relative flex justify-center items-center">
           <Image
             src="/placeholder.svg?height=400&width=600"
-            alt="AI Cold Calling Process Illustration"
+            alt="Automated Data Extraction Process Illustration"
             width={300}
             height={200}
             className="rounded-3xl shadow-2xl border border-gray-100 object-cover"
@@ -88,15 +87,14 @@ export default function SolutionPage() {
         <div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Why it works</h2>
           <p className="text-base text-gray-600 mb-6 leading-relaxed">
-            Cold calling is time-consuming and often frustrating. Many calls go unanswered or end quickly.
-            JOTIQ eliminates this by automating cold calling and ensuring you only spend time with
-            qualified leads.
+            Manual data entry is slow and error-prone. JOTIQ automates the entire process, ensuring your
+            client data is accurate, organized, and ready for outreach.
           </p>
         </div>
         <div className="relative flex justify-center items-center">
           <Image
             src="/placeholder.svg?height=400&width=600"
-            alt="AI Cold Calling Benefits Illustration"
+            alt="Data Accuracy and Organization Benefits Illustration"
             width={300}
             height={200}
             className="rounded-3xl shadow-2xl border border-gray-100 object-cover"
@@ -125,8 +123,7 @@ export default function SolutionPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">The Problem</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Recruiters dislike cold calling because it wastes time on unanswered calls and
-                uninterested prospects.
+                Manual data entry is time-consuming and prone to errors.
               </p>
             </div>
             {/* Solution */}
@@ -136,8 +133,8 @@ export default function SolutionPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">The Solution</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                JOTIQ's AI assistant makes the calls, qualifies leads, and schedules meetings
-                automatically. You can fully customize the call profile and scripts to fit your campaign.
+                Upload Excel or CSV files to JOTIQ. The platform instantly processes and organizes
+                client data for you.
               </p>
             </div>
             {/* Results */}
@@ -148,9 +145,9 @@ export default function SolutionPage() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">The Results</h3>
               <div className="space-y-3">
                 {[
-                  "No more cold calling stress",
-                  "Save time by letting the AI handle multiple calls at once",
-                  "Spend more time talking to qualified leads",
+                  "Fast, automated data processing",
+                  "Save hours each week by skipping manual entry",
+                  "Improve data accuracy and consistency",
                 ].map((result, index) => (
                   <div key={index} className="flex items-center">
                     <CheckCircle className="w-4 h-4 text-green-600 mr-3" />

@@ -103,7 +103,7 @@ export default function AIFeatures() {
                     <div className="space-y-3">
                       {feature.features.map((item, itemIndex) => (
                         <div key={itemIndex} className="flex items-center text-sm text-gray-700">
-                          <CheckCircle className="w-4 h-4 mr-3 text-green-600" />
+                          <CheckCircle className="w-4 h-4 mr-3 text-gr-600" />
                           {item}
                         </div>
                       ))}

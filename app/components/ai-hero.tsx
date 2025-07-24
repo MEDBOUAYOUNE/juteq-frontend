@@ -11,8 +11,8 @@ export default function AIHero() {
           {/* Left Text Block */}
           <div className="flex-1 space-y-12 text-center lg:text-left">
             <div className="flex flex-col items-center lg:items-start space-y-8">
-              <h1 className="text-5xl sm:text-4xl lg:text-5xl font-normal text-gray-900 tracking-tight leading-tight flex flex-col space-y-4 text-center lg:text-left">
-                <span>Automate Client Outreach</span>
+              <h1 className="text-5xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight leading-tight flex flex-col space-y-4 text-center lg:text-left">
+                <span>Automate Your Client Outreach</span>
                 <span>Find New Clients</span>
                 <span>Save Hours Every Day</span>
               </h1>
@@ -21,9 +21,9 @@ export default function AIHero() {
               Your AI-powered business development assistant, built for recruiters and agencies worldwide.
             </p> */}
             <div className="flex flex-col sm:flex-col gap-6 justify-center lg:justify-start">
-              <p className="text-xl text-gray-600 max-w-3xl">
-                Your AI-powered business development assistant, <br />
-                built for recruiters and agencies worldwide.
+              <p className="text-xl text-gray-900 font-meduim max-w-3xl">
+                Built for recruiters and recruitment agencies who <br />
+                want to scale faster without the manual effort.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <Link
@@ -42,11 +42,11 @@ export default function AIHero() {
                   </span>
                 </Link>
               </div>
-              <div className="text-sm text-gray-700">
+              {/* <div className="text-sm text-gray-700">
                 <p className="font-normal mx-auto lg:mx-0">
                   No credit card required. Free forever with the Explore Plan.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
           {/* Right Visual */}

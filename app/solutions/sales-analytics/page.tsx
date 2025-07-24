@@ -20,16 +20,16 @@ export default function SolutionPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center relative z-10">
           <h1 className="text-5xl lg:text-5xl sm:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-            AI-Powered Cold Calling
-            {/* <span className="text-blue-600 block">Cold Calling</span> */}
+            Sales Analytics
+            {/* <span className="text-blue-600 block">Analytics</span> */}
           </h1>
           <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto">
-            Automate outbound calls, lead qualification, and meeting scheduling with AI that can
-            handle multiple calls simultaneously while you focus on closing deals.
+            Get real-time performance insights on your outreach campaigns, tracking key metrics
+            like email open rates, response times, and client engagement to optimize your strategy.
           </p>
           <div className="flex justify-center">
             <button className="inline-flex items-center justify-center bg-[#005BAB] text-white px-8 py-4 rounded-lg text-base font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-              See How It Works
+              View Demo
               <ArrowRight className="w-5 h-5 ml-2" />
             </button>
           </div>
@@ -46,15 +46,14 @@ export default function SolutionPage() {
         <div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What it is</h2>
           <p className="text-base text-gray-600 mb-6 leading-relaxed">
-            AI-Powered Cold Calling automates outbound calls, lead qualification, and meeting scheduling.
-            You can customize the AI assistant's profile and script to fit your outreach style. The AI can
-            make multiple calls at the same time, scaling your outreach efforts efficiently.
+            Sales Analytics gives you real-time performance insights on your outreach campaigns, tracking
+            key metrics like email open rates, response times, and client engagement.
           </p>
         </div>
         <div className="relative flex justify-center items-center">
           <Image
             src="/placeholder.svg?height=400&width=600"
-            alt="AI-Powered Cold Calling Illustration"
+            alt="Sales Analytics Dashboard Illustration"
             width={300}
             height={200}
             className="rounded-3xl shadow-2xl border border-gray-100 object-cover"
@@ -67,15 +66,14 @@ export default function SolutionPage() {
         <div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">How it works</h2>
           <p className="text-base text-gray-600 mb-6 leading-relaxed">
-            You set up your cold calling campaigns, select your target prospects, and JOTIQ's AI handles
-            the rest. The AI uses either your custom scripts or JOTIQ's default templates to engage, qualify,
-            and schedule meetings with interested prospects.
+            JOTIQ's machine learning-powered dashboards show you exactly how clients engage with your
+            emails in real-time, helping you optimize your outreach strategy.
           </p>
         </div>
         <div className="relative flex justify-center items-center">
           <Image
             src="/placeholder.svg?height=400&width=600"
-            alt="AI Cold Calling Process Illustration"
+            alt="Real-time Analytics and Machine Learning Illustration"
             width={300}
             height={200}
             className="rounded-3xl shadow-2xl border border-gray-100 object-cover"
@@ -88,15 +86,14 @@ export default function SolutionPage() {
         <div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Why it works</h2>
           <p className="text-base text-gray-600 mb-6 leading-relaxed">
-            Cold calling is time-consuming and often frustrating. Many calls go unanswered or end quickly.
-            JOTIQ eliminates this by automating cold calling and ensuring you only spend time with
-            qualified leads.
+            Without real-time data, it's hard to know what's working. JOTIQ shows you exactly how your
+            outreach is performing so you can adjust your approach and improve results.
           </p>
         </div>
         <div className="relative flex justify-center items-center">
           <Image
             src="/placeholder.svg?height=400&width=600"
-            alt="AI Cold Calling Benefits Illustration"
+            alt="Data-Driven Performance Optimization Illustration"
             width={300}
             height={200}
             className="rounded-3xl shadow-2xl border border-gray-100 object-cover"
@@ -125,8 +122,8 @@ export default function SolutionPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">The Problem</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Recruiters dislike cold calling because it wastes time on unanswered calls and
-                uninterested prospects.
+                It's difficult to track how recipients interact with your emails, making it hard to improve
+                outreach.
               </p>
             </div>
             {/* Solution */}
@@ -136,8 +133,8 @@ export default function SolutionPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">The Solution</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                JOTIQ's AI assistant makes the calls, qualifies leads, and schedules meetings
-                automatically. You can fully customize the call profile and scripts to fit your campaign.
+                JOTIQ provides real-time tracking and detailed engagement insights to help you
+                refine your outreach strategy.
               </p>
             </div>
             {/* Results */}
@@ -148,9 +145,9 @@ export default function SolutionPage() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">The Results</h3>
               <div className="space-y-3">
                 {[
-                  "No more cold calling stress",
-                  "Save time by letting the AI handle multiple calls at once",
-                  "Spend more time talking to qualified leads",
+                  "Real-time visibility into client engagement",
+                  "Personalize follow-ups based on recipient actions",
+                  "Improve conversion rates using data-driven strategies",
                 ].map((result, index) => (
                   <div key={index} className="flex items-center">
                     <CheckCircle className="w-4 h-4 text-green-600 mr-3" />
