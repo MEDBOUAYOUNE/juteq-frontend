@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Roboto } from 'next/font/google'
+import { Inter, Sora } from 'next/font/google';
  
 // const roboto = Roboto({
 //   weight: '400',
@@ -10,10 +10,15 @@ import "./globals.css"
 import CleanHeader from "./components/clean-header"
 import MinimalFooter from "./components/minimal-footer"
 
-const roboto = Roboto({
-  weight: '400',
+const inter = Inter({
   subsets: ['latin'],
-})
+  variable: '--font-inter',
+});
+
+const sora = Sora({
+  subsets: ['latin'],
+  variable: '--font-sora',
+});
 
 export const metadata: Metadata = {
   title: "JOTIQ | AI-Powered Business Development Tool",
@@ -32,7 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={`${inter.variable} ${sora.variable}`}>
         <CleanHeader />
         {children}
         </body>

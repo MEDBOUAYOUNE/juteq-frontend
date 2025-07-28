@@ -51,7 +51,7 @@ export default function PricingSection() {
     <section className="py-10 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-semibold text-gray-900 mb-6">Find the Right Plan for You</h2>
+          <h2 className="text-4xl font-semibold font-headline text-gray-900 mb-6">Find the Right Plan for You</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Choose the plan that fits your outreach needs. Start free and upgrade as you grow.
           </p>

@@ -74,7 +74,7 @@ export default function AIFeatures() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl font-semibold text-gray-900 mb-6">Unlock Outreach Intelligence</h2>
+          <h2 className="text-4xl font-semibold font-headline text-gray-900 mb-6">Unlock Outreach Intelligence</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Advanced AI automation that learns from your best practices and continuously improves your results
           </p>

@@ -1,167 +1,135 @@
-"use client"
 import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight, Zap, Lightbulb, CheckCircle, Sparkles, Bot, Clock, Target, Rocket, Star, Play } from "lucide-react"
+import { ArrowUpRight, Check, Mail, Plus, ChevronRight, Upload, FileText } from "lucide-react"
 
-export default function SolutionPage() {
+export default function BrandedContentUpload() {
   return (
-    <div className="bg-white min-h-screen">
-      {/* Hero Section */}
-      <section className="relative pt-8 pb-2 lg:pt-20 lg:pb-8 overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
-        <div
-          className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-50 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"
-          style={{ animationDelay: "2s" }}
-        ></div>
-      </div>
-      
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center relative z-10">
-          <h1 className="text-5xl lg:text-5xl sm:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-            Branded Content Upload
-            {/* <span className="text-blue-600 block">Content Upload</span> */}
-          </h1>
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto">
-            Upload and send professional client-facing documents like brochures, candidate profiles,
-            and contracts with consistent branding across all communications.
-          </p>
-          <div className="flex justify-center">
-            <button className="inline-flex items-center justify-center bg-[#005BAB] text-white px-8 py-4 rounded-lg text-base font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-              Upload Your Content
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </button>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white text-gray-900 p-4 md:p-8 lg:p-12">
+      <main className="w-full max-w-6xl mx-auto grid gap-12 py-12">
+        {/* Hero Section */}
+        <section className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="space-y-6">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-headline font-semibold leading-tight">
+              Branded Content Upload for Agencies
+            </h1>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-headline font-regular text-[#0075DE] leading-tight">
+              Send polished, on-brand materials in seconds
+            </h2>
+            <p className="text-lg text-gray-700 max-w-md">
+              Easily upload brochures, candidate profiles, proposals, or contracts. JOTIQ ensures every document reflects your brand and is ready to send at the click of a button.
+            </p>
           </div>
-        </div>
-      </div>
-    </section>
-    
-    {/* Combined What it is, How it works, Why it works */}
-<section className="py-16 px-8 bg-gradient-to-b from-gray-50 to-white">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="space-y-16">
-      {/* What it is */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6">
-        <div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">What it is</h2>
-          <p className="text-base text-gray-600 mb-6 leading-relaxed">
-            Branded Content Upload allows you to upload and send professional client-facing documents
-            like brochures, candidate profiles, terms and agreements, and one-off contracts, all with your
-            consistent branding.
-          </p>
-        </div>
-        <div className="relative flex justify-center items-center">
+          <div className="relative flex justify-center items-center">
           <Image
             src="/placeholder.svg?height=400&width=600"
             alt="Branded Content Upload Interface Illustration"
-            width={300}
-            height={200}
+            width={400}
+            height={300}
             className="rounded-3xl shadow-2xl border border-gray-100 object-cover"
           />
         </div>
-      </div>
+        </section>
 
-      {/* How it works */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6">
-        <div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">How it works</h2>
-          <p className="text-base text-gray-600 mb-6 leading-relaxed">
-            You upload your branded materials to JOTIQ, where they are stored and easily sent to
-            prospects with just a few clicks. The platform ensures brand consistency across all
-            communications.
-          </p>
-        </div>
-        <div className="relative flex justify-center items-center">
-          <Image
-            src="/placeholder.svg?height=400&width=600"
-            alt="Document Storage and Sharing Process Illustration"
-            width={300}
-            height={200}
-            className="rounded-3xl shadow-2xl border border-gray-100 object-cover"
-          />
-        </div>
-      </div>
-
-      {/* Why it works */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6">
-        <div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Why it works</h2>
-          <p className="text-base text-gray-600 mb-6 leading-relaxed">
-            Manually creating and sending client-facing documents takes time and can result in branding
-            mistakes. JOTIQ automates the process, saving you time and ensuring professional
-            consistency.
-          </p>
-        </div>
-        <div className="relative flex justify-center items-center">
-          <Image
-            src="/placeholder.svg?height=400&width=600"
-            alt="Brand Consistency and Time Savings Benefits Illustration"
-            width={300}
-            height={200}
-            className="rounded-3xl shadow-2xl border border-gray-100 object-cover"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-      {/* Use Case Section */}
-      <section className="py-14 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <div className="inline-flex items-center px-3 py-1 bg-orange-100 border border-orange-200 rounded-full text-orange-700 text-sm font-medium mb-4">
-              <CheckCircle className="w-8 h-8 mr-2" />
-              <span className="font-semibold">Use Case</span>
-            </div>
-            {/* <h2 className="text-3xl font-bold text-gray-900 mb-4">Use Case</h2> */}
+        {/* What You Can Do / Why It Works Sections */}
+        <section className="grid md:grid-cols-2 gap-12 mt-12">
+          <div>
+            <h3 className="text-2xl font-headline font-bold mb-4">What You Can Do</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <p className="text-lg text-gray-700">Store brochures, CVs, and agreements in one place</p>
+              </li>
+              <li className="flex items-start gap-3">
+                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <p className="text-lg text-gray-700">Send branded content quickly and securely</p>
+              </li>
+              <li className="flex items-start gap-3">
+                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <p className="text-lg text-gray-700">Keep all client-facing documents visually consistent</p>
+              </li>
+            </ul>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Problem */}
-            <div className="bg-red-50 rounded-2xl p-8 border border-red-100 hover:shadow-lg transition-shadow duration-300">
-              <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6 border border-red-200 shadow-sm">
-                <Zap className="w-8 h-8 text-red-600" />
+          <div>
+            <h3 className="text-2xl font-headline font-bold mb-4">Why It Works</h3>
+            <p className="text-lg text-gray-700 mb-6">
+              Branded consistency builds trust. JOTIQ makes it simple to deliver documents that look professional and match your agency's style.
+            </p>
+          </div>
+        </section>
+
+        {/* How It Works Section */}
+        <section className="mt-12">
+          <h3 className="text-2xl font-headline font-bold mb-6 text-center">How It Works (Step-by-Step)</h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] text-white rounded-full text-2xl font-bold mx-auto">
+                1
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">The Problem</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Recruiters waste time manually formatting and sending documents, which often leads
-                to inconsistent branding.
-              </p>
+              <h4 className="text-xl font-semibold">Upload proposals and brochures</h4>
             </div>
-            {/* Solution */}
-            <div className="bg-blue-50 rounded-2xl p-8 border border-blue-100 hover:shadow-lg transition-shadow duration-300 transform hover:scale-105">
-              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 border border-blue-200 shadow-sm">
-                <Lightbulb className="w-8 h-8 text-blue-600" />
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] text-white rounded-full text-2xl font-bold mx-auto">
+                2
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">The Solution</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Upload proposals, agreements, and profiles to JOTIQ and send them quickly to your
-                prospects with brand consistency.
-              </p>
+              <h4 className="text-xl font-semibold">Store files under your company branding</h4>
             </div>
-            {/* Results */}
-            <div className="bg-green-50 rounded-2xl p-8 border border-green-100 hover:shadow-lg transition-shadow duration-300">
-              <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6 border border-green-200 shadow-sm">
-                <CheckCircle className="w-8 h-8 text-green-600" />
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] text-white rounded-full text-2xl font-bold mx-auto">
+                3
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">The Results</h3>
-              <div className="space-y-3">
-                {[
-                  "Consistent branding across all documents",
-                  "Easily send customized deals or agreements",
-                  "Centralized storage for fast, efficient access",
-                ].map((result, index) => (
-                  <div key={index} className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-600 mr-3" />
-                    <span className="text-sm text-gray-700">{result}</span>
-                  </div>
-                ))}
-              </div>
+              <h4 className="text-xl font-semibold">Send them in one click to clients</h4>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        {/* Key Benefits & Testimonial */}
+        <section className="grid md:grid-cols-2 gap-12 mt-12">
+          <div>
+            <h3 className="text-2xl font-headline font-bold mb-4">Key Benefits</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <Check className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <p className="text-lg text-gray-700">Maintain brand consistency across all touchpoints</p>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <p className="text-lg text-gray-700">Speed up proposal and document sharing</p>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <p className="text-lg text-gray-700">Access all materials from one central hub</p>
+              </li>
+            </ul>
+          </div>
+          <div className="flex items-center justify-center">
+            <p className="text-2xl font-semibold italic text-gray-800 text-center">
+              &quot;Upload once and use anytime&quot;
+            </p>
+          </div>
+        </section>
+
+        {/* Call to Action */}
+        <section className="flex flex-col items-center justify-center mt-12 space-y-6">
+          <button className="bg-[#0075DE] hover:bg-blue-700 text-white px-8 py-4 text-xl font-semibold rounded-lg shadow-lg transition-colors duration-200">
+            Upload Your Content
+          </button>
+          <p className="text-md text-gray-600 text-center max-w-lg">
+            Enhance your documents with {' '}
+            <a 
+              href="/solutions/sales-analytics"
+              className="text-[#0075DE] hover:text-blue-700 transition-colors duration-200"
+            >
+            Sales Analytics 
+            </a>
+            {' '} and {' '}
+            <a 
+              href="/solutions/smart-data-upload-extraction"
+              className="text-[#0075DE] hover:text-blue-700 transition-colors duration-200"
+            >
+            Smart Outreach
+            </a>
+          </p>
+        </section>
+      </main>
     </div>
   )
 }

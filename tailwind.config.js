@@ -9,6 +9,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)', 'sans-serif'],     // For body and general text
+        headline: ['var(--font-sora)', 'sans-serif'],   // For headings
+      },
       colors: {
         "baby-blue": "#D0EBFF",
         "soft-blue": "#74C0FC",
