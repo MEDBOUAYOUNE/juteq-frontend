@@ -36,15 +36,15 @@ export default function AutomatedClientOutreach() {
             <h3 className="text-2xl font-headline font-bold mb-4">What You Can Do</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <Mail className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Generate high-quality outreach emails in seconds using AI</p>
               </li>
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <ChevronRight className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Automate follow-ups based on engagement and timing</p>
               </li>
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <Phone className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Let clients schedule calls directly through integrated links</p>
               </li>
             </ul>

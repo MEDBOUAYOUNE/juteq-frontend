@@ -36,15 +36,15 @@ export default function AIColdCalling() {
             <h3 className="text-2xl font-headline font-bold mb-4">What You Can Do</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <Phone className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Run voice outreach campaigns without picking up the phone</p>
               </li>
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <ChevronRight className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Use your AI agent to ask businesses if they have open roles</p>
               </li>
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <Mail className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Follow up with warm leads flagged by the system</p>
               </li>
             </ul>

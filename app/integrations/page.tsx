@@ -1,65 +1,205 @@
-// import { Button } from "@/components/ui/button"
-// import { Card, CardContent } from "@/components/ui/card"
-import { Database, Zap, Clock, Target } from "lucide-react"
-import Image from "next/image"
+import type { Metadata } from "next"
+import {
+  Building2,
+  Users,
+  Target,
+  TrendingUp,
+  Database,
+  UserCheck,
+  Briefcase,
+  Globe,
+  BarChart3,
+  FileText,
+  FolderOpen,
+  Zap,
+  RefreshCw,
+} from "lucide-react"
 
-export default function Component() {
+export const metadata: Metadata = {
+  title: "Integrations - JOTIQ",
+  description:
+    "Connect JOTIQ with your favorite CRMs and business platforms to streamline processes and boost productivity.",
+}
+
+const popularIntegrations = [
+  {
+    name: "Salesforce",
+    icon: Building2,
+    description: "Sync your CRM data seamlessly with JOTIQ to improve client management and streamline your outreach.",
+    img_src: "/integration/Salesforce.png",
+  },
+  {
+    name: "Bullhorn",
+    icon: Users,
+    description:
+      "Easily manage candidates, placements, and clients by connecting Bullhorn with JOTIQ for smarter workflows.",
+    img_src: "/integration/Bullhorn.png",
+  },
+  {
+    name: "HubSpot CRM",
+    icon: Target,
+    description:
+      "Automate your marketing and sales outreach directly from HubSpot while syncing real-time updates with JOTIQ.",
+    img_src: "/integration/HubSpot.png",
+  },
+  {
+    name: "Pipedrive",
+    icon: TrendingUp,
+    description: "Integrate Pipedrive with JOTIQ to simplify your sales process and boost lead management efficiency.",
+    img_src: "/integration/Pipedrive.png",
+  },
+]
+
+const additionalIntegrations = [
+  {
+    name: "Zoho CRM",
+    icon: Database,
+    description: "Sync your client data and automate outreach by integrating Zoho CRM with JOTIQ.",
+  },
+  {
+    name: "Recruit CRM",
+    icon: UserCheck,
+    description: "Simplify your recruitment process and improve client communication with the Recruit CRM integration.",
+  },
+  {
+    name: "Breezy HR",
+    icon: Briefcase,
+    description: "Streamline your recruitment workflow and automate tasks by connecting Breezy HR with JOTIQ.",
+  },
+  {
+    name: "Copper (for Google Workspace)",
+    icon: Globe,
+    description: "Keep your client data always up-to-date by connecting Copper for Google Workspace with JOTIQ.",
+  },
+  {
+    name: "Insightly",
+    icon: BarChart3,
+    description: "Optimize your business development and automate CRM tasks by linking Insightly with JOTIQ.",
+  },
+  {
+    name: "CANDIS CRM",
+    icon: FileText,
+    description: "Automate invoicing, financial workflows, and client management with the CANDIS CRM integration.",
+  },
+]
+
+const benefits = [
+  {
+    icon: FolderOpen,
+    title: "Stay Organized",
+    description: "Keep all your client data in one place and never miss an opportunity.",
+  },
+  {
+    icon: Zap,
+    title: "Automate Tasks",
+    description: "Let JOTIQ handle lead generation, outreach, follow-ups, and more with seamless automation.",
+  },
+  {
+    icon: RefreshCw,
+    title: "Real-Time Sync",
+    description: "Ensure all systems are always up-to-date with instant, real-time data synchronization.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Boost Productivity",
+    description: "Spend less time on repetitive tasks and more time on closing deals and growing your business.",
+  },
+]
+
+export default function IntegrationsPage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-white text-gray-900 p-4 md:p-8 lg:p-12">
-      <main className="w-full max-w-7xl mx-auto space-y-16 py-12">
-        {/* Hero Section */}
-        <section className="text-center space-y-6 max-w-4xl mx-auto">
-          <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
-            Seamless Integrations for Recruitment Efficiency
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl sm:text-5xl font-bold font-headline text-[#0075DE] mb-4">
+            Seamless Integrations with Leading Tools
           </h1>
-          <h2 className="font-headline text-2xl md:text-3xl lg:text-4xl font-semibold text-[#0075DE] leading-tight">
-            Work smarter with the tools you already use
-          </h2>
-          <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Connect JOTIQ with your favorite CRMs and platforms. No disruption. Just faster outreach, smarter workflows.
+          <p className="text-lg text-gray-900 leading-relaxed max-w-3xl  mx-auto">
+            JOTIQ connects effortlessly with your favorite CRMs and business platforms to streamline your processes and
+            boost productivity. Whether you're using Salesforce, HubSpot, or other top solutions, JOTIQ helps you
+            automate tasks, sync data, and improve workflows for better efficiency and stronger results.
           </p>
-        </section>
+        </div>
+      </section>
 
-        {/* Popular CRM Integrations */}
-        <section className="space-y-8">
-          <div className="text-center space-y-4">
-            <h3 className="font-headline text-2xl md:text-3xl font-bold text-gray-900">Popular CRM Integrations</h3>
-            <p className="text-lg text-gray-700 max-w-4xl mx-auto">
-              JOTIQ connects effortlessly with the industry's most trusted CRM systems like Salesforce, Bullhorn,
-              HubSpot, and more. Automate outreach, sync data, and keep everything in one place. Whether you're a solo
-              recruiter or managing a team, these integrations simplify your workflow and drive results.
-            </p>
-          </div>
-
-          {/* CRM Logos */}
-          <div className="relative overflow-hidden py-8">
-            <div className="flex animate-scroll-left gap-8 whitespace-nowrap">
-              {/* First set of logos */}
-              {[
-                { name: "Bullhorn", width: 80, height: 30 },
-                { name: "Salesforce", width: 80, height: 30 },
-                { name: "Vincere", width: 80, height: 30 },
-                { name: "Greenhouse", width: 80, height: 30 },
-                { name: "Zoho Recruit", width: 80, height: 30 },
-                { name: "HubSpot", width: 80, height: 30 },
-              ].map((logo, index) => (
-                <div
-                  key={`first-${index}`}
-                  className="bg-gray-100 rounded-lg px-4 py-2 border border-gray-200 hover:border-[#0075DE] transition-colors flex-shrink-0"
-                >
-                  <Image
-                    src={`/placeholder.svg?height=${logo.height}&width=${logo.width}&text=${logo.name}&query=${logo.name} company logo`}
-                    alt={`${logo.name} logo`}
-                    width={logo.width}
-                    height={logo.height}
-                    className="opacity-70 hover:opacity-100 transition-opacity"
+      {/* Popular Integrations */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-[#0075DE] font-headline text-center py-4 mb-8">Popular Integrations</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {popularIntegrations.map((integration, index) => (
+              <div key={index} className="text-center group">
+                <div className="flex items-center justify-center mb-4 mx-auto">
+                  <img
+                    src={integration.img_src || "/placeholder.svg"}
+                    alt={`${integration.name} logo`}
+                    className="w-24 h-24 object-contain hover:scale-110 transition-transform duration-300 grayscale hover:grayscale-0"
                   />
+                </div>
+                <p className="text-gray-600 leading-relaxed text-sm">{integration.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Integrations */}
+      <section className="py-12 px-8 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-[#0075DE] font-headline text-center mb-8">Additional Integrations</h2>
+
+          {/* Grid with lines */}
+          <div className="border border-gray-300 rounded-lg overflow-hidden bg-white shadow-sm">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              {additionalIntegrations.map((integration, index) => (
+                <div
+                  key={index}
+                  className={`p-6 text-center group hover:bg-blue-50 transition-colors border-r border-b border-gray-200 
+              ${index % 3 === 2 ? "lg:border-r-0" : ""} 
+              ${index % 2 === 1 ? "md:border-r-0 lg:border-r" : ""} 
+              ${index >= additionalIntegrations.length - 3 ? "lg:border-b-0" : ""} 
+              ${index >= additionalIntegrations.length - 2 ? "md:border-b-0 lg:border-b" : ""} 
+              ${index === additionalIntegrations.length - 1 ? "border-b-0" : ""}`}
+                >
+                  <div className="flex items-center justify-center mb-4 mx-auto">
+                    <integration.icon className="w-16 h-16 text-gray-400 hover:text-[#0075DE] hover:scale-110 transition-all duration-300" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-black mb-2">{integration.name}</h3>
+                  <p className="text-gray-600 leading-relaxed text-sm">{integration.description}</p>
                 </div>
               ))}
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+
+      {/* Why Integrate */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold font-headline text-black mb-3">Why Integrate with JOTIQ?</h2>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              Integrating your CRM and business tools with JOTIQ helps you create more connected, automated, and
+              efficient workflows, giving you more time to focus on building client relationships.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {benefits.map((benefit, index) => (
+              <div key={index} className="flex items-start space-x-3 bg-white p-5 rounded-lg shadow-sm">
+                <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg flex-shrink-0">
+                  <benefit.icon className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-black mb-1">{benefit.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
