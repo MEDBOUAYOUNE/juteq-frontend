@@ -20,7 +20,7 @@ export default function SmartDataUpload() {
           </div>
           <div className="relative flex justify-center items-center">
           <Image
-            src="/placeholder.svg?height=400&width=600"
+            // src="/solutions/smart_data.png"
             alt="Smart Data Upload Interface Illustration"
             width={400}
             height={300}
@@ -35,15 +35,15 @@ export default function SmartDataUpload() {
             <h3 className="text-2xl font-headline font-bold mb-4">What You Can Do</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <Upload className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Upload client or job lead data in bulk</p>
               </li>
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <Database className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Automatically extract names, emails, and phone numbers</p>
               </li>
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <ArrowUpRight className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Review and manage organized profiles from one dashboard</p>
               </li>
             </ul>

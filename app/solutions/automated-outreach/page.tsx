@@ -21,7 +21,7 @@ export default function AutomatedClientOutreach() {
           </div>
           <div className="relative flex justify-center items-center">
           <Image
-            src="/solutions/automated-outreach.png"
+            // src="/solutions/automated-outreach.png"
             alt="Automated Client Outreach Interface Illustration"
             width={400}
             height={300}

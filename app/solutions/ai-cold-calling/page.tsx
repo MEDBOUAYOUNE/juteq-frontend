@@ -21,7 +21,7 @@ export default function AIColdCalling() {
           </div>
           <div className="relative flex justify-center items-center">
           <Image
-            src="/solutions/ai-called.png"
+            // src="/solutions/ai-called.png"
             alt="AI Cold Calling Interface Illustration"
             width={400}
             height={300}

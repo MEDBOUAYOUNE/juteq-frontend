@@ -20,7 +20,7 @@ export default function BrandedContentUpload() {
           </div>
           <div className="relative flex justify-center items-center">
           <Image
-            src="/placeholder.svg?height=400&width=600"
+            // src="/solutions/branded_content.jpg"
             alt="Branded Content Upload Interface Illustration"
             width={400}
             height={300}
@@ -35,15 +35,15 @@ export default function BrandedContentUpload() {
             <h3 className="text-2xl font-headline font-bold mb-4">What You Can Do</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <FileText className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Store brochures, CVs, and agreements in one place</p>
               </li>
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <Mail className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Send branded content quickly and securely</p>
               </li>
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <Check className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Keep all client-facing documents visually consistent</p>
               </li>
             </ul>

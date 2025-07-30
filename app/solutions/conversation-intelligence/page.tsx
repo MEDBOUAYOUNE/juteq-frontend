@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { ArrowUpRight, Check, Mail, Plus, ChevronRight, Mic, Brain } from "lucide-react"
+import { ArrowUpRight, Check, Mail, Plus, ChevronRight, Mic, Brain, FileText, MessageSquare, TrendingUp, Zap, Target, BarChart3 } from "lucide-react"
 
 export default function ConversationIntelligence() {
   return (
@@ -20,7 +20,7 @@ export default function ConversationIntelligence() {
           </div>
           <div className="relative flex justify-center items-center">
           <Image
-            src="/placeholder.svg?height=400&width=600"
+            // src="/solutions/convesion.png"
             alt="Conversation Intelligence Dashboard Illustration"
             width={400}
             height={300}
@@ -35,15 +35,15 @@ export default function ConversationIntelligence() {
             <h3 className="text-2xl font-headline font-bold mb-4">What You Can Do</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <FileText className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Get AI-generated call summaries and transcripts</p>
               </li>
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <MessageSquare className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Analyze tone, sentiment, and objections</p>
               </li>
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <TrendingUp className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Identify improvement points to close more deals</p>
               </li>
             </ul>
@@ -87,15 +87,15 @@ export default function ConversationIntelligence() {
             <h3 className="text-2xl font-headline font-bold mb-4">Key Benefits</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Check className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <Zap className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Fast access to call summaries</p>
               </li>
               <li className="flex items-start gap-3">
-                <Check className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <Target className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Sentiment-based follow-up strategies</p>
               </li>
               <li className="flex items-start gap-3">
-                <Check className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <BarChart3 className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Stronger conversations with data-driven feedback</p>
               </li>
             </ul>
@@ -122,7 +122,7 @@ export default function ConversationIntelligence() {
             </a>
             {' '} and {' '}
             <a 
-              href="olutions/sales-analytics"
+              href="/solutions/sales-analytics"
               className="text-[#0075DE] hover:text-blue-700 transition-colors duration-200"
             >
             Analytics

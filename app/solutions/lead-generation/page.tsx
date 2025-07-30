@@ -20,7 +20,7 @@ export default function RealTimeLeadGeneration() {
           </div>
           <div className="relative flex justify-center items-center">
           <Image
-            src="/solutions/lead-genration.png"
+            // src="/solutions/lead-genration.png"
             alt="Real-Time Lead Generation Dashboard Illustration"
             width={400}
             height={300}
@@ -35,15 +35,15 @@ export default function RealTimeLeadGeneration() {
             <h3 className="text-2xl font-headline font-bold mb-4">What You Can Do</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <Search className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Monitor live job listings across major job boards</p>
               </li>
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <Target className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Filter and save relevant opportunities</p>
               </li>
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <ArrowUpRight className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Track all leads from one place</p>
               </li>
             </ul>

@@ -20,7 +20,7 @@ export default function SalesAnalytics() {
           </div>
           <div className="relative flex justify-center items-center">
           <Image
-            src="/placeholder.svg?height=400&width=600"
+            // src="/solutions/sales.png"
             alt="Sales Analytics Dashboard Illustration"
             width={400}
             height={300}
@@ -35,15 +35,15 @@ export default function SalesAnalytics() {
             <h3 className="text-2xl font-headline font-bold mb-4">What You Can Do</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <BarChart className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Monitor campaign performance at a glance</p>
               </li>
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <TrendingUp className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">See what content drives engagement</p>
               </li>
               <li className="flex items-start gap-3">
-                <Plus className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
+                <ArrowUpRight className="w-6 h-6 text-[#0075DE] shrink-0 mt-1" />
                 <p className="text-lg text-gray-700">Identify top-performing messages and timing</p>
               </li>
             </ul>
