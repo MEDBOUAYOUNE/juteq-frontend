@@ -20,7 +20,7 @@ export default function ConversationIntelligence() {
           </div>
           <div className="relative flex justify-center items-center">
           <Image
-            // src="/solutions/convesion.png"
+            src="/solutions/convesion.png"
             alt="Conversation Intelligence Dashboard Illustration"
             width={400}
             height={300}

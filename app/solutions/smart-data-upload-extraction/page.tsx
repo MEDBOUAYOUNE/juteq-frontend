@@ -20,7 +20,7 @@ export default function SmartDataUpload() {
           </div>
           <div className="relative flex justify-center items-center">
           <Image
-            // src="/solutions/smart_data.png"
+            src="/solutions/smart_data.png"
             alt="Smart Data Upload Interface Illustration"
             width={400}
             height={300}

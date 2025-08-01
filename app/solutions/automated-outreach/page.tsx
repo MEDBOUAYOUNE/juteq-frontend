@@ -21,7 +21,7 @@ export default function AutomatedClientOutreach() {
           </div>
           <div className="relative flex justify-center items-center">
           <Image
-            // src="/solutions/automated-outreach.png"
+            src="/solutions/automated-outreach.png"
             alt="Automated Client Outreach Interface Illustration"
             width={400}
             height={300}
@@ -62,19 +62,19 @@ export default function AutomatedClientOutreach() {
           <h3 className="text-2xl font-headline font-bold mb-6 text-center">How It Works (Step-by-Step)</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center space-y-4">
-              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] text-white rounded-full text-2xl font-bold mx-auto">
+              <div className="w-16 h-16 flex items-center justify-center bg-[#CC5500] text-white rounded-full text-2xl font-bold mx-auto">
                 1
               </div>
               <h4 className="text-xl font-semibold">AI generates a personalized email</h4>
             </div>
             <div className="text-center space-y-4">
-              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] text-white rounded-full text-2xl font-bold mx-auto">
+              <div className="w-16 h-16 flex items-center justify-center bg-[#CC5500] text-white rounded-full text-2xl font-bold mx-auto">
                 2
               </div>
               <h4 className="text-xl font-semibold">Follow-up is automatically scheduled</h4>
             </div>
             <div className="text-center space-y-4">
-              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] text-white rounded-full text-2xl font-bold mx-auto">
+              <div className="w-16 h-16 flex items-center justify-center bg-[#CC5500] text-white rounded-full text-2xl font-bold mx-auto">
                 3
               </div>
               <h4 className="text-xl font-semibold">Meeting is booked through integrated scheduling</h4>

@@ -20,7 +20,7 @@ export default function RealTimeLeadGeneration() {
           </div>
           <div className="relative flex justify-center items-center">
           <Image
-            // src="/solutions/lead-genration.png"
+            src="/solutions/lead-genration.png"
             alt="Real-Time Lead Generation Dashboard Illustration"
             width={400}
             height={300}

@@ -20,7 +20,7 @@ export default function SalesAnalytics() {
           </div>
           <div className="relative flex justify-center items-center">
           <Image
-            // src="/solutions/sales.png"
+            src="/solutions/sales.png"
             alt="Sales Analytics Dashboard Illustration"
             width={400}
             height={300}

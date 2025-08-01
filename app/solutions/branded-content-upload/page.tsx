@@ -20,7 +20,7 @@ export default function BrandedContentUpload() {
           </div>
           <div className="relative flex justify-center items-center">
           <Image
-            // src="/solutions/branded_content.jpg"
+            src="/solutions/branded_content.jpg"
             alt="Branded Content Upload Interface Illustration"
             width={400}
             height={300}
