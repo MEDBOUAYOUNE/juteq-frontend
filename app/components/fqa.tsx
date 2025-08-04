@@ -59,7 +59,7 @@ export default function FAQ() {
             >
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full px-8 py-6 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-[#005BAB] focus:ring-opacity-50"
+                className="w-full px-8 py-6 text-left flex items-center justify-between"
               >
                 <h3 className="text-xl font-bold font-headline text-gray-900 pr-4">
                   {item.question}

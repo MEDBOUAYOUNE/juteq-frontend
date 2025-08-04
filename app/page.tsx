@@ -21,7 +21,7 @@ export default function Home() {
       <AITestimonials />
       <WhyItWorks />
       <FAQ />
-      {/* <MinimalCTA /> */}
+      <MinimalCTA />
       {/* <MinimalFooter /> */}
     </main>
   )

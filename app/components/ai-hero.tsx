@@ -11,16 +11,19 @@ export default function AIHero() {
 
           <div className="flex-1 space-y-12 text-center lg:text-left">
             <div className="flex flex-col items-center lg:items-start space-y-8">
-              <h1 className="text-5xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight leading-tight flex flex-col space-y-4 text-center lg:text-left">
-                <span>Automate Your Client Outreach</span>
-                <span>Find New Clients</span>
-                <span>Save Hours Every Day</span>
+              <h1 className="text-5xl sm:text-4xl lg:text-5xl font-semibold font-headline tracking-tight leading-tight flex flex-col space-y-4 text-center lg:text-left bg-gradient-to-r from-blue-300 to-blue-600 bg-clip-text text-transparent">
+                <span>AI-Powered Outreach for Recruiters</span>
+                {/* <span>for Recruiters</span> */}
+                {/* <span>Save Hours Every Day</span> */}
               </h1>
             </div>
             <div className="flex flex-col sm:flex-col gap-6 justify-center lg:justify-start">
-              <p className="text-xl text-gray-900 font-meduim max-w-3xl">
-                Built for recruiters and recruitment agencies who <br />
-                want to scale faster without the manual effort.
+              <p className="text-xl text-gray-900 font-medium max-w-3xl">
+                Automate your email and voice outreach,
+                so you can focus on recruiting.<br /> 
+                Save time, boost response rates,
+                and win more clients all without a CRM.
+
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <Link

@@ -2,7 +2,7 @@ import { CheckCircle, Users, Zap, Target } from "lucide-react"
 
 export default function WhyItWorks() {
   return (
-    <section className="py-20 px-4 bg-gray-50">
+    <section className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Headline */}
         <div className="text-center mb-16">
