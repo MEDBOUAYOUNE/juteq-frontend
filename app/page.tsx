@@ -4,8 +4,11 @@ import AIFeatures from "./components/ai-features"
 import AITestimonials from "./components/ai-testimonials"
 import PricingSection from "./components/pricing-section"
 import HowItWorks from "./components/how-it-works"
+import WhyItWorks from "./components/why-it-works"
 import MinimalCTA from "./components/minimal-cta"
 import MinimalFooter from "./components/minimal-footer"
+import FAQ from "./components/fqa"
+
 
 export default function Home() {
   return (
@@ -13,9 +16,11 @@ export default function Home() {
       {/* <CleanHeader /> */}
       <AIHero />
       <AIFeatures />
+      <HowItWorks />
       <PricingSection />
-      {/* <HowItWorks />
-      <AITestimonials /> */}
+      <AITestimonials />
+      <WhyItWorks />
+      <FAQ />
       {/* <MinimalCTA /> */}
       {/* <MinimalFooter /> */}
     </main>

@@ -3,46 +3,43 @@ import Link from "next/link"
 
 const plans = [
   {
-    name: "Explore",
-    price: "Free",
-    period: "",
-    description: "Start exploring JOTIQ risk-free and discover the power of AI outreach.",
-    features: ["Up to 500 contacts", "Email templates library", "Basic analytics", "50 MB storage"],
-    cta: "Get Started Free",
-    popular: false,
-  },
-  {
-    name: "Activate",
-    price: "$19",
+    name: "Explore Plan (Free Forever)",
+    price: "$0",
     period: "/month",
-    description: "Launch your AI outreach and save hours every week.",
-    features: [
-      "Up to 1,000 contacts",
-      "2,000 emails/month (incl. 500 AI-written)",
-      "3 branded content uploads",
-      "2 job websites scraping",
-      "Email automation sequences",
-      "Basic integrations",
-    ],
-    cta: "Start for $19",
+    description: "For curious recruiters who want to try JOTIQ risk-free.",
+    features: ["Up to 500 contacts", "1 AI Voice Call (demo)", "No credit card needed",],
+    cta: "Start Free",
     popular: false,
   },
   {
-    name: "Connect",
+    name: "Connect Plan",
     price: "$49",
     period: "/month",
-    description: "Book more meetings with AI cold calling while you focus on results.",
+    description: "Ideal for consultants placing 1–2 candidates per month.",
     features: [
-      "Up to 2,000 contacts",
-      "5,000 emails/month (incl. 2,000 AI-written)",
-      "AI voice calls (500/month)",
-      "10 branded content uploads",
-      "5 job websites scraping",
-      "Advanced analytics",
-      "Priority support",
+      " 3,000 emails/month (750 AI-written)",
+      "AI Voice Calling (~150 min US)",
+      "5 branded content uploads",
+      "job websites scraping",
     ],
-    cta: "Start for $49",
+    cta: "Choose Connect",
     popular: true,
+  },
+  {
+    name: "Convert Plan (Power Users)",
+    price: "$89",
+    period: "/month",
+    description: "Built for recruitment professionals scaling outreach or launching in new markets.",
+    features: [
+      "4,000 emails/month (1,000 AI-written)",
+      "AI Voice Calling (~210 min US)",
+      "AI voice calls (500/month)",
+      "Call Recording, Transcription & Summaries",
+      "Unlimited Content Uploads ",
+      "job websites scraping",
+    ],
+    cta: "Choose Convert",
+    popular: false,
   },
 ]
 
@@ -51,7 +48,7 @@ export default function PricingSection() {
     <section className="py-10 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-semibold font-headline text-gray-900 mb-6">Find the Right Plan for You</h2>
+          <h2 className="text-4xl font-semibold font-headline text-[#005BAB] mb-6">Find the Right Plan for You</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Choose the plan that fits your outreach needs. Start free and upgrade as you grow.
           </p>
@@ -67,7 +64,7 @@ export default function PricingSection() {
             >
               {plan.popular && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-medium">
+                  <span className="bg-[#005BAB] text-white px-4 py-1 rounded-full text-sm font-medium">
                     Most Popular
                   </span>
                 </div>
@@ -102,7 +99,7 @@ export default function PricingSection() {
                   href={plan.name === "Enterprise" ? "/contact" : "/signup"}
                   className={`block w-full text-center py-3 px-6 rounded-lg font-medium transition-colors ${
                     plan.popular
-                      ? "bg-blue-600 text-white hover:bg-blue-700"
+                      ? "bg-[#005BAB] text-white hover:bg-blue-700"
                       : "bg-gray-100 text-gray-900 hover:bg-gray-200"
                   }`}
                 >

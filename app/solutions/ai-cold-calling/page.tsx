@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowUpRight, Check, Mail, Plus, ChevronRight, Phone } from "lucide-react"
+import { ArrowUpRight, Check, Mail, Plus, ChevronRight, Phone, Play, Search, Flag } from "lucide-react"
 
 export default function AIColdCalling() {
   return (
@@ -54,28 +54,6 @@ export default function AIColdCalling() {
             <p className="text-lg text-gray-700 mb-6">
               Cold calls are tough to scale and easy to ignore. By letting AI start the conversation, you plant a seed professionally and efficiently so you can focus on the leads that matter most.
             </p>
-            {/* <div className="flex items-center justify-between text-center text-gray-700">
-              <div className="flex flex-col items-center">
-                <div className="w-12 h-12 flex items-center justify-center bg-[#0075DE] text-white rounded-full text-xl font-bold">
-                  1
-                </div>
-                <p className="mt-2 text-sm">Launch Campaign</p>
-              </div>
-              <ChevronRight className="w-6 h-6 text-gray-400" />
-              <div className="flex flex-col items-center">
-                <div className="w-12 h-12 flex items-center justify-center bg-[#0075DE] text-white rounded-full text-xl font-bold">
-                  2
-                </div>
-                <p className="mt-2 text-sm">AI Checks Interest</p>
-              </div>
-              <ChevronRight className="w-6 h-6 text-gray-400" />
-              <div className="flex flex-col items-center">
-                <div className="w-12 h-12 flex items-center justify-center bg-[#0075DE] text-white rounded-full text-xl font-bold">
-                  3
-                </div>
-                <p className="mt-2 text-sm">Follow-Up Ready</p>
-              </div>
-            </div> */}
           </div>
         </section>
 
@@ -84,20 +62,20 @@ export default function AIColdCalling() {
           <h3 className="text-2xl font-headline font-bold mb-6 text-center">How It Works (Step-by-Step)</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center space-y-4">
-              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] text-white rounded-full text-2xl font-bold mx-auto">
-                1
+              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] rounded-full mx-auto">
+                <Play className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-xl font-semibold">Launch your calling campaign</h4>
             </div>
             <div className="text-center space-y-4">
-              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] text-white rounded-full text-2xl font-bold mx-auto">
-                2
+              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] rounded-full mx-auto">
+                <Search className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-xl font-semibold">The AI agent politely checks if hiring is on the horizon</h4>
             </div>
             <div className="text-center space-y-4">
-              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] text-white rounded-full text-2xl font-bold mx-auto">
-                3
+              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] rounded-full mx-auto">
+                <Flag className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-xl font-semibold">JOTIQ highlights companies open to a follow-up</h4>
             </div>
@@ -132,9 +110,12 @@ export default function AIColdCalling() {
 
         {/* Call to Action */}
         <section className="flex flex-col items-center justify-center mt-12 space-y-6">
-          <div className="bg-[#0075DE] hover:bg-blue-700 text-white px-8 py-4 text-xl font-semibold rounded-lg shadow-lg cursor-pointer">
-            See How It Works
-          </div>
+          <Link
+            href="/signup"
+            className="group relative bg-[#0075DE] text-white px-6 py-3 font-medium text-base rounded-lg hover:bg-blue-700 hover:border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-300 ease-out text-center hover:shadow-md hover:shadow-blue-600/25 transform hover:-translate-y-0.5"
+          >
+            <span className="transition-all duration-300 group-hover:translate-x-1">See How It Works</span>
+          </Link>
           <p className="text-md text-gray-600 text-center max-w-lg">
             Looking for more automation? Pair it with {' '}
             <a 

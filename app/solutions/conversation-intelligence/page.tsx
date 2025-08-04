@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { ArrowUpRight, Check, Mail, Plus, ChevronRight, Mic, Brain, FileText, MessageSquare, TrendingUp, Zap, Target, BarChart3 } from "lucide-react"
 
 export default function ConversationIntelligence() {
@@ -61,20 +62,20 @@ export default function ConversationIntelligence() {
           <h3 className="text-2xl font-headline font-bold mb-6 text-center">How It Works (Step-by-Step)</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center space-y-4">
-              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] text-white rounded-full text-2xl font-bold mx-auto">
-                1
+              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] rounded-full mx-auto">
+                <Mic className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-xl font-semibold">Calls are recorded and transcribed</h4>
             </div>
             <div className="text-center space-y-4">
-              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] text-white rounded-full text-2xl font-bold mx-auto">
-                2
+              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] rounded-full mx-auto">
+                <Brain className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-xl font-semibold">Key insights and sentiment are highlighted</h4>
             </div>
             <div className="text-center space-y-4">
-              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] text-white rounded-full text-2xl font-bold mx-auto">
-                3
+              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] rounded-full mx-auto">
+                <TrendingUp className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-xl font-semibold">You improve messaging and follow-ups</h4>
             </div>
@@ -109,9 +110,12 @@ export default function ConversationIntelligence() {
 
         {/* Call to Action */}
         <section className="flex flex-col items-center justify-center mt-12 space-y-6">
-          <button className="bg-[#0075DE] hover:bg-blue-700 text-white px-8 py-4 text-xl font-semibold rounded-lg shadow-lg transition-colors duration-200">
-            See How It Works
-          </button>
+          <Link
+            href="/signup"
+            className="group relative bg-[#0075DE] text-white px-6 py-3 font-medium text-base rounded-lg hover:bg-blue-700 hover:border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-300 ease-out text-center hover:shadow-md hover:shadow-blue-600/25 transform hover:-translate-y-0.5"
+          >
+            <span className="transition-all duration-300 group-hover:translate-x-1">See How It Works</span>
+          </Link>
           <p className="text-md text-gray-600 text-center max-w-lg">
             Boost post-call impact with {' '}
             <a 
