@@ -7,7 +7,7 @@ export default function HowItWorks() {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Headline */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-semibold font-headline text-[#005BAB] mb-4">How it works</h2>
+          <h2 className="text-4xl font-bold text-center font-headline text-[#005BAB] mb-4">How it works</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             From upload to outreach, JOTIQ simplifies every step.
           </p>

@@ -7,7 +7,7 @@ export default function AITestimonials() {
       <div className="max-w-7xl mx-auto">
         {/* Headline */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-semibold font-headline text-[#005BAB] mb-4">Use Cases by Persona</h2>
+          <h2 className="text-4xl font-bold text-center font-headline text-[#005BAB] mb-4">Use Cases by Persona</h2>
           <p className="text-xl text-gray-600">Tailored for Every Type of Recruitment Professional</p>
         </div>
 

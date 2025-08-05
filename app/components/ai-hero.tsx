@@ -11,10 +11,8 @@ export default function AIHero() {
 
           <div className="flex-1 space-y-12 text-center lg:text-left">
             <div className="flex flex-col items-center lg:items-start space-y-8">
-              <h1 className="text-5xl sm:text-4xl lg:text-5xl font-semibold font-headline tracking-tight leading-tight flex flex-col space-y-4 text-center lg:text-left bg-gradient-to-r from-blue-300 to-blue-600 bg-clip-text text-transparent">
-                <span>AI-Powered Outreach for Recruiters</span>
-                {/* <span>for Recruiters</span> */}
-                {/* <span>Save Hours Every Day</span> */}
+              <h1 className="text-5xl sm:text-4xl lg:text-5xl font-semibold font-headline tracking-tight leading-tight text-center lg:text-left bg-gradient-to-r from-blue-300 to-blue-600 bg-clip-text text-transparent">
+                AI-Powered Outreach for Recruiters
               </h1>
             </div>
             <div className="flex flex-col sm:flex-col gap-6 justify-center lg:justify-start">
@@ -48,7 +46,7 @@ export default function AIHero() {
             <div className="relative">
               <div className="bg-white rounded-2xl shadow-lg border border-gray-200">
                 <Image
-                  src="/placeholder.svg?height=500&width=500"
+                  src="/test/test1.webp"
                   width={500}
                   height={500}
                   alt="JOTIQ AI dashboard showing automated client outreach, lead generation, and performance analytics"

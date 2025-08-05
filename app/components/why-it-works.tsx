@@ -6,7 +6,7 @@ export default function WhyItWorks() {
       <div className="max-w-7xl mx-auto">
         {/* Headline */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-semibold font-headline text-[#005BAB] mb-6">
+          <h2 className="text-4xl font-bold text-center font-headline text-[#005BAB] mb-6">
             Why JOTIQ?
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">

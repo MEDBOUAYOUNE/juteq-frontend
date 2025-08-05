@@ -8,6 +8,7 @@ import WhyItWorks from "./components/why-it-works"
 import MinimalCTA from "./components/minimal-cta"
 import MinimalFooter from "./components/minimal-footer"
 import FAQ from "./components/fqa"
+import TrustedLogos from "./components/trusted-logos"
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
     <main className="min-h-screen">
       {/* <CleanHeader /> */}
       <AIHero />
+      <TrustedLogos />
       <AIFeatures />
       <HowItWorks />
       <PricingSection />

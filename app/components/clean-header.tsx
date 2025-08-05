@@ -80,12 +80,12 @@ export default function CleanHeader() {
   ]
 
   const resourcesLinks = [
-    { href: "/help", label: "Help Center", icon: HelpCircle },
-    { href: "/blog", label: "Blog", icon: BookOpen },
-    { href: "/updates", label: "Product Updates", icon: Zap },
-    { href: "/idea-box", label: "Idea Box", icon: Lightbulb },
-    { href: "/support", label: "Customer Support", icon: Headphones },
-    { href: "/contact", label: "Contact Us", icon: Mail },
+    { href: "/resources/help-center", label: "Help Center", icon: HelpCircle },
+    { href: "/resources/blog", label: "Blog", icon: BookOpen },
+    { href: "/resources/products-updates", label: "Product Updates", icon: Zap },
+    { href: "/resources/idea-box", label: "Idea Box", icon: Lightbulb },
+    { href: "/resources/support", label: "Customer Support", icon: Headphones },
+    { href: "/resources/contact", label: "Contact Us", icon: Mail },
   ]
 
   return (
@@ -143,8 +143,6 @@ export default function CleanHeader() {
                   </div>
                 </div>
 
-                {/* Resources Dropdown */}
-
                 <Link 
                   href="/pricing" 
                   className="text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200"
@@ -152,20 +150,25 @@ export default function CleanHeader() {
                   Pricing
                 </Link>
                 <Link 
-                  href="/integrations" 
+                  href="/integrations"
                   className="text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200"
                 >
                   Integrations
                 </Link>
+
+                {/* Resources Dropdown */}
                 <div 
                   className="relative group"
                   onMouseEnter={() => setActiveDropdown('resources')}
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
-                  <button className="flex items-center text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">
+                  <Link 
+                    href="/resources"
+                    className="flex items-center text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200"
+                  >
                     Resources
                     <ChevronDown className={`ml-1 h-4 w-4 transition-transform duration-200 ${activeDropdown === 'resources' ? 'rotate-180' : ''}`} />
-                  </button>
+                  </Link>
                   <div className={`absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-gray-100 transition-all duration-200 ${activeDropdown === 'resources' ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-2'}`}>
                     <div className="py-3">
                       {resourcesLinks.map((link, index) => {
@@ -233,7 +236,7 @@ export default function CleanHeader() {
               <Link 
                 href="/products"
                 onClick={closeMobileMenu}
-                className="block px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium transition-colors duration-200  mx-2"
+                className="block px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium transition-colors duration-200 mx-2"
               >
                 Products
               </Link>
@@ -267,33 +270,41 @@ export default function CleanHeader() {
                 </div>
               </div>
 
-              {/* Mobile Resources Dropdown */}
-              <div className="px-2">
-                <button
-                  onClick={() => toggleMobileDropdown('resources')}
-                  className="flex items-center justify-between w-full px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium transition-colors duration-200 rounded-lg"
-                >
-                  Resources
-                  <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMobileDropdownOpen === 'resources' ? 'rotate-180' : ''}`} />
-                </button>
-            
-
               <Link 
                 href="/pricing"
                 onClick={closeMobileMenu}
-                className="block px-4 py-3 text-gray-600 hover:text-gray-900 ho:bg-gray-5ver0 font-medium transition-colors duration-200 rounded-lg mx-2"
+                className="block px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium transition-colors duration-200 mx-2"
               >
                 Pricing
               </Link>
               <Link 
                 href="/integrations"
                 onClick={closeMobileMenu}
-                className="block px-4 py-3 text-gray-600 hover:text-gray-900 ho:bg-gray-5ver0 font-medium transition-colors duration-200 rounded-lg mx-2"
+                className="block px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium transition-colors duration-200 mx-2"
               >
                 Integrations
               </Link>
 
-              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isMobileDropdownOpen === 'resources' ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+              {/* Mobile Resources Dropdown */}
+              <div className="px-2">
+                <Link
+                  href="/resources"
+                  className="flex items-center justify-between w-full px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium transition-colors duration-200 rounded-lg"
+                >
+                  Resources
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault()
+                      e.stopPropagation()
+                      toggleMobileDropdown('resources')
+                    }}
+                    className="p-1"
+                  >
+                    <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMobileDropdownOpen === 'resources' ? 'rotate-180' : ''}`} />
+                  </button>
+                </Link>
+
+                <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isMobileDropdownOpen === 'resources' ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                   <div className="pl-4 py-2 space-y-1">
                     {resourcesLinks.map((link, index) => {
                       const IconComponent = link.icon
