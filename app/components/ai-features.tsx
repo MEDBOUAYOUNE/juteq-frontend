@@ -17,12 +17,11 @@ export default function AIFeatures() {
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="/test/test2.webp"
+              src="/tested/test2.webp"
               alt="Email Campaign Interface"
               width={400}
               height={300}
               className="rounded-lg shadow-lg"
-              priority
             />
           </div>
         </div>
@@ -31,12 +30,11 @@ export default function AIFeatures() {
         <div className="grid md:grid-cols-2 gap-8 items-center mb-16">
           <div className="p-4 flex items-center justify-center md:order-1">
             <Image
-              src="/test/test4.webp"
+              src="/tested/test4.webp"
               alt="AI Call Dashboard"
               width={400}
               height={300}
               className="rounded-lg shadow-lg"
-              priority
             />
           </div>
           <div className="md:order-2">
@@ -59,12 +57,11 @@ export default function AIFeatures() {
           </div>
           <div className="p-4 flex items-center justify-center">
             <Image
-              src="/test/test3.webp"
+              src="/tested/test3.webp"
               alt="Job Leads Dashboard"
               width={400}
               height={300}
               className="rounded-lg shadow-lg"
-              priority
             />
           </div>
         </div>
@@ -73,12 +70,11 @@ export default function AIFeatures() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="p-4 flex items-center justify-center md:order-1">
             <Image
-              src="/test/test4.webp"
+              src="/tested/test4.webp"
               alt="Analytics Dashboard"
               width={400}
               height={300}
               className="rounded-lg shadow-lg"
-              priority
             />
           </div>
           <div className="md:order-2">

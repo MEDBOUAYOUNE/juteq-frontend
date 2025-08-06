@@ -46,12 +46,11 @@ export default function AIHero() {
             <div className="relative">
               <div className="bg-white rounded-2xl shadow-lg border border-gray-200">
                 <Image
-                  src="/test/test1.webp"
+                  src="/tested/test1.webp"
                   width={500}
                   height={500}
                   alt="JOTIQ AI dashboard showing automated client outreach, lead generation, and performance analytics"
                   className="rounded-lg object-cover"
-                  priority
                 />
               </div>
             </div>
