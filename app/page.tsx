@@ -9,6 +9,7 @@ import MinimalCTA from "./components/minimal-cta"
 import MinimalFooter from "./components/minimal-footer"
 import FAQ from "./components/fqa"
 import TrustedLogos from "./components/trusted-logos"
+import RealCompliance from "./components/real-complaince"
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <AIHero />
       <TrustedLogos />
       <AIFeatures />
+      <RealCompliance />
       <HowItWorks />
       <PricingSection />
       <AITestimonials />

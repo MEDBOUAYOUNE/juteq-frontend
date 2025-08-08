@@ -11,7 +11,7 @@ export default function AIHero() {
 
           <div className="flex-1 space-y-12 text-center lg:text-left">
             <div className="flex flex-col items-center lg:items-start space-y-8">
-              <h1 className="text-5xl sm:text-4xl lg:text-5xl font-semibold font-headline tracking-tight leading-tight text-center lg:text-left bg-gradient-to-r from-blue-300 to-blue-600 bg-clip-text text-transparent">
+              <h1 className="text-5xl sm:text-4xl lg:text-5xl font-semibold font-headline text-[#020817] leading-tight">
                 AI-Powered Outreach for Recruiters
               </h1>
             </div>

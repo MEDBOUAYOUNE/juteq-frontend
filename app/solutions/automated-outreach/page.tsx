@@ -62,21 +62,24 @@ export default function AutomatedClientOutreach() {
           <h3 className="text-2xl font-headline font-bold mb-6 text-center">How It Works (Step-by-Step)</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center space-y-4">
-              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] rounded-full mx-auto">
-                <Bot className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 flex items-center justify-center bg-[#EB6810] rounded-full mx-auto">
+                <span className="text-2xl font-bold text-white">1</span>
               </div>
+              <Bot className="w-8 h-8 text-[#EB6810] mx-auto" />
               <h4 className="text-xl font-semibold">AI generates a personalized email</h4>
             </div>
             <div className="text-center space-y-4">
-              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] rounded-full mx-auto">
-                <Clock className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 flex items-center justify-center bg-[#EB6810] rounded-full mx-auto">
+                <span className="text-2xl font-bold text-white">2</span>
               </div>
+              <Clock className="w-8 h-8 text-[#EB6810] mx-auto" />
               <h4 className="text-xl font-semibold">Follow-up is automatically scheduled</h4>
             </div>
             <div className="text-center space-y-4">
-              <div className="w-16 h-16 flex items-center justify-center bg-[#0075DE] rounded-full mx-auto">
-                <Calendar className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 flex items-center justify-center bg-[#EB6810] rounded-full mx-auto">
+                <span className="text-2xl font-bold text-white">3</span>
               </div>
+              <Calendar className="w-8 h-8 text-[#EB6810] mx-auto" />
               <h4 className="text-xl font-semibold">Meeting is booked through integrated scheduling</h4>
             </div>
           </div>

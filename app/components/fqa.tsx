@@ -61,7 +61,7 @@ export default function FAQ() {
                 onClick={() => toggleItem(index)}
                 className="w-full px-8 py-6 text-left flex items-center justify-between"
               >
-                <h3 className="text-xl font-bold font-headline text-gray-900 pr-4">
+                <h3 className="text-xl font-bold text-gray-900 pr-4">
                   {item.question}
                 </h3>
                 <div className="flex-shrink-0">

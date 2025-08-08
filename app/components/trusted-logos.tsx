@@ -6,86 +6,86 @@ export default function TrustedLogos() {
   const companies = [
     {
       name: "Randstad",
-      logo: "/trusted/randstad-logo.svg"
+      logo: "/trusted/randstad.png"
     },
     {
       name: "Adecco",
-      logo: "/trusted/adecco-logo.svg"
+      logo: "/trusted/adecco.png"
     },
     {
       name: "Sthree",
-      logo: "/trusted/sthree-logo.png"
+      logo: "/trusted/sthree.png"
     },
     {
       name: "Michael Page",
-      logo: "/trusted/michael-page-logo.png"
+      logo: "/trusted/michaelpage.png"
     },
     {
       name: "Kelly Services",
-      logo: "/trusted/kelly-services-logo.svg"
+      logo: "/trusted/kelly.svg"
     },
     // {
     //   name: "Antal International",
-    //   logo: "/trusted/antal-international-logo.svg"
+    //   logo: "/trusted/michael-page-logo.png"
     // },
-    // {
-    //   name: "TEKsystems",
-    //   logo: "/trusted/teksystems-logo.svg"
-    // }
+    {
+      name: "TEKsystems",
+      logo: "/trusted/teksystems.svg"
+    }
   ]
 
   return (
-    <section className="py-16 px-8 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto">
         
         {/* Header */}
-        {/* <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-semibold font-headline text-[#005BAB] mb-4">
-            Already trusted by recruitment professionals from
+        <div className="text-center mb-16">
+          <h2 className="text-2xl md:text-3xl font-semibold font-headline text-gray-800 mb-4">
+            Already trusted by recruitment professionals from
           </h2>
-        </div> */}
+          <div className="w-24 h-1 bg-[#005BAB] mx-auto"></div>
+        </div>
 
-        {/* Moving Logos Container */}
-        <div className="relative">
-          <div className="flex animate-scroll">
-            {/* First set of logos */}
-            {companies.map((company, index) => (
-              <div
-                key={`first-${index}`}
-                className="flex-shrink-0 mx-8 flex items-center justify-center"
-                style={{ minWidth: '200px' }}
-              >
-                <Image
-                  src={company.logo}
-                  alt={`${company.name} logo`}
-                  width={160}
-                  height={80}
-                  className="h-12 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
-                />
-              </div>
-            ))}
+        {/* Logos Animation Container */}
+        <div className="relative w-full">
+          {/* Inner container with padding */}
+          <div className="mx-16 relative overflow-hidden">
             
-            {/* Duplicate set for seamless loop */}
-            {companies.map((company, index) => (
-              <div
-                key={`second-${index}`}
-                className="flex-shrink-0 mx-8 flex items-center justify-center"
-                style={{ minWidth: '200px' }}
-              >
-                <Image
-                  src={company.logo}
-                  alt={`${company.name} logo`}
-                  width={160}
-                  height={80}
-                  className="h-12 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
-                />
-              </div>
-            ))}
+            {/* Moving logos wrapper */}
+            <div className="logos-track flex">
+              {/* First set */}
+              {companies.map((company, index) => (
+                <div
+                  key={`logo-1-${index}`}
+                  className="logo-item flex-shrink-0 flex items-center justify-center px-8"
+                >
+                  <Image
+                    src={company.logo}
+                    alt={`${company.name} logo`}
+                    width={140}
+                    height={70}
+                    className="h-10 w-auto object-contain filter grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                  />
+                </div>
+              ))}
+              
+              {/* Second set for seamless loop */}
+              {companies.map((company, index) => (
+                <div
+                  key={`logo-2-${index}`}
+                  className="logo-item flex-shrink-0 flex items-center justify-center px-8"
+                >
+                  <Image
+                    src={company.logo}
+                    alt={`${company.name} logo`}
+                    width={140}
+                    height={70}
+                    className="h-10 w-auto object-contain filter grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
-
-          {/* Gradient Overlays */}
-          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
         </div>
       </div>
 
@@ -99,11 +99,11 @@ export default function TrustedLogos() {
           }
         }
         
-        .animate-scroll {
-          animation: scroll 30s linear infinite;
+        .logos-track {
+          animation: scroll 20s linear infinite;
         }
         
-        .animate-scroll:hover {
+        .logos-track:hover {
           animation-play-state: paused;
         }
       `}</style>

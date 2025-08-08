@@ -15,7 +15,7 @@ export default function AIFeatures() {
               every message lands right. That means higher replies and less manual follow-up.
             </p>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-end">
             <Image
               src="/tested/test2.webp"
               alt="Email Campaign Interface"
@@ -28,7 +28,7 @@ export default function AIFeatures() {
 
         {/* Feature 2 - Visual Left, Text Right */}
         <div className="grid md:grid-cols-2 gap-8 items-center mb-16">
-          <div className="p-4 flex items-center justify-center md:order-1">
+          <div className="flex items-center md:order-1">
             <Image
               src="/tested/test4.webp"
               alt="AI Call Dashboard"
@@ -55,7 +55,7 @@ export default function AIFeatures() {
               to know where hiring happens, no more manual browsing.
             </p>
           </div>
-          <div className="p-4 flex items-center justify-center">
+          <div className="flex items-center justify-end">
             <Image
               src="/tested/test3.webp"
               alt="Job Leads Dashboard"
@@ -68,7 +68,7 @@ export default function AIFeatures() {
 
         {/* Feature 4 - Visual Left, Text Right */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="p-4 flex items-center justify-center md:order-1">
+          <div className="flex items-center md:order-1">
             <Image
               src="/tested/test4.webp"
               alt="Analytics Dashboard"
