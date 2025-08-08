@@ -26,6 +26,7 @@ export default function AutomatedClientOutreach() {
             width={400}
             height={300}
             className="rounded-3xl shadow-2xl border border-gray-100 object-cover"
+            priority
           />
         </div>
         </section>

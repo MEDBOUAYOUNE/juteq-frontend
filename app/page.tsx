@@ -19,7 +19,7 @@ export default function Home() {
       <AIHero />
       <TrustedLogos />
       <AIFeatures />
-      <RealCompliance />
+      {/* <RealCompliance /> */}
       <HowItWorks />
       <PricingSection />
       <AITestimonials />
