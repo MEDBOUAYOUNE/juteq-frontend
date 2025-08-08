@@ -25,7 +25,7 @@ export default function AIHero() {
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <Link
-                  href="/signup"
+                  href="https://dev.leadshift.ai/"
                   className="group relative bg-[#0075DE] text-white px-6 py-3 font-medium text-base rounded-lg hover:bg-blue-700 hover:border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-300 ease-out text-center hover:shadow-md hover:shadow-blue-600/25 transform hover:-translate-y-0.5"
                 >
                   <span className="transition-all duration-300 group-hover:translate-x-1">Start Free Trial</span>
@@ -46,7 +46,7 @@ export default function AIHero() {
             <div className="relative">
               <div className="bg-white rounded-2xl shadow-lg border border-gray-200">
                 <Image
-                  src="/tested/test1.webp"
+                  src="/tested/hero.png"
                   width={500}
                   height={500}
                   alt="JOTIQ AI dashboard showing automated client outreach, lead generation, and performance analytics"

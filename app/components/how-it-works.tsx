@@ -2,7 +2,7 @@ import { Upload, Rocket, BarChart3 } from "lucide-react"
 
 export default function HowItWorks() {
   return (
-    <section className="relative bg-white py-20 px-4 overflow-hidden">
+    <section className="relative bg-baby-blue py-20 px-4 overflow-hidden">
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Headline */}
@@ -14,7 +14,7 @@ export default function HowItWorks() {
         </div>
 
         {/* UI Rectangle Container */}
-        <div className="bg-gradient-to-br p-40 from-blue-50 to-indigo-100 border border-blue-200 rounded-3xl p-24 md:p-32 shadow-xl backdrop-blur-sm">
+        {/* <div className="bg-gradient-to-br p-40 from-blue-50 to-indigo-100 border border-blue-200 rounded-3xl p-24 md:p-32 shadow-xl backdrop-blur-sm"> */}
           {/* Steps Container */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {/* Step 1: Upload Contacts */}
@@ -54,7 +54,7 @@ export default function HowItWorks() {
               </p>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </div>
     </section>
   )

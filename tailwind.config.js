@@ -14,8 +14,8 @@ module.exports = {
         headline: ['var(--font-sora)', 'sans-serif'],   // For headings
       },
       colors: {
-        "baby-blue": "#D0EBFF",
-        "soft-blue": "#74C0FC",
+        "baby-blue": "##82C8E5",
+        "soft-blue": "#005BAB",
         "dodger-blue": "#339AF0",
         "deep-grey": "#4A5568",
         border: "hsl(var(--border))",

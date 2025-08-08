@@ -38,7 +38,6 @@ export default function TrustedLogos() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto">
         
-        {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-3xl font-semibold font-headline text-gray-800 mb-4">
             Already trusted by recruitment professionals from
@@ -46,12 +45,10 @@ export default function TrustedLogos() {
           <div className="w-24 h-1 bg-[#005BAB] mx-auto"></div>
         </div>
 
-        {/* Logos Animation Container */}
         <div className="relative w-full">
           {/* Inner container with padding */}
           <div className="mx-16 relative overflow-hidden">
             
-            {/* Moving logos wrapper */}
             <div className="logos-track flex">
               {/* First set */}
               {companies.map((company, index) => (
@@ -69,7 +66,6 @@ export default function TrustedLogos() {
                 </div>
               ))}
               
-              {/* Second set for seamless loop */}
               {companies.map((company, index) => (
                 <div
                   key={`logo-2-${index}`}
@@ -78,7 +74,7 @@ export default function TrustedLogos() {
                   <Image
                     src={company.logo}
                     alt={`${company.name} logo`}
-                    width={140}
+                    width={120}
                     height={70}
                     className="h-10 w-auto object-contain filter grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
                   />

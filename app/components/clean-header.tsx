@@ -195,14 +195,14 @@ export default function CleanHeader() {
           {/* Desktop CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
             <Link
-                href="/Login"
+                href="https://dev.leadshift.ai/"
                 className="group relative text-[#0075DE]  bg-white text-center px-6 py-2 rounded-lg font-medium text-base hover:bg-blue-50 hover:border-blue-600"
               >
                 <span className="transition-all duration-300 group-hover:translate-x-0.5">Sign In</span>
               </Link>
               
               <Link
-                href="/signup"
+                href="https://dev.leadshift.ai/register"
                 className="group relative bg-[#0075DE] text-white text-center px-6 py-2 rounded-lg font-medium text-base hover:bg-blue-700 hover:border-blue-700"
               >
                 <span className="transition-all duration-300 group-hover:translate-x-0.5">Get Started Free</span>
@@ -328,14 +328,14 @@ export default function CleanHeader() {
             {/* Mobile CTA Buttons */}
             <div className="mt-6 px-2 space-y-3">
               <Link
-                href="/Login"
+                href="https://dev.leadshift.ai/"
                 onClick={closeMobileMenu}
                 className="block w-full text-center text-[#0075DE]  bg-white px-6 py-3 rounded-lg font-medium text-base hover:bg-blue-50 transition-colors duration-200"
               >
                 Sign In
               </Link>
               <Link
-                href="/signup"
+                href="https://dev.leadshift.ai/register"
                 onClick={closeMobileMenu}
                 className="block w-full text-center bg-[#0075DE] text-white px-6 py-3 rounded-lg font-medium text-base hover:bg-blue-700 transition-colors duration-200"
               >
