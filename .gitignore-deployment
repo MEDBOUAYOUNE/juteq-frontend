@@ -1,0 +1,10 @@
+# Deployment files to add to your .gitignore
+# Add these lines to your main .gitignore file
+
+# FTP credentials and config
+.deploy-config
+deployment.log
+backups/
+
+# Temporary FTP files
+ftp_batch_*

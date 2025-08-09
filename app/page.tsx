@@ -4,6 +4,7 @@ import AIFeatures from "./components/ai-features"
 import AITestimonials from "./components/ai-testimonials"
 import PricingSection from "./components/pricing-section"
 import HowItWorks from "./components/how-it-works"
+import HowItWorksWithJotiq from "./components/how-it-works-with-jotiq"
 import WhyItWorks from "./components/why-it-works"
 import MinimalCTA from "./components/minimal-cta"
 import MinimalFooter from "./components/minimal-footer"
@@ -21,6 +22,7 @@ export default function Home() {
       <AIFeatures />
       {/* <RealCompliance /> */}
       <HowItWorks />
+      <HowItWorksWithJotiq />
       <PricingSection />
       <AITestimonials />
       <WhyItWorks />

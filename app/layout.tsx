@@ -40,8 +40,8 @@ export default function RootLayout({
       <body className={`${inter.variable} ${sora.variable}`}>
         <CleanHeader />
         {children}
-        </body>
         <MinimalFooter />
+      </body>
     </html>
   )
 }

@@ -1,0 +1,17 @@
+# Deployment Retry Configuration
+# Modify these values to adjust retry behavior
+
+# Maximum number of retry attempts
+MAX_RETRIES=3
+
+# Connection timeout in seconds (how long to wait for initial connection)
+CONNECTION_TIMEOUT=30
+
+# Command timeout in seconds (how long to wait for upload to complete)
+COMMAND_TIMEOUT=300
+
+# Delay between retry attempts in seconds
+RETRY_DELAY=5
+
+# Enable verbose output for debugging (true/false)
+VERBOSE_MODE=true

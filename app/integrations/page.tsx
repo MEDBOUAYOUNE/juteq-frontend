@@ -166,7 +166,7 @@ export default function IntegrationsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {additionalIntegrations.map((integration, index) => (
                 <div
-                  // key={index}
+                  key={index}
                   className="p-6 text-center group hover:bg-blue-50 transition-colors"
                 >
                   <div className="flex items-center justify-center mb-4 mx-auto">

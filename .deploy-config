@@ -1,0 +1,23 @@
+# Jotiq Website Deployment Configuration
+# Keep this file secure and don't commit it to version control
+
+# FTP Server Configuration
+FTP_HOST=136.144.188.96
+FTP_PORT=218999
+FTP_USER=jotiq.web
+FTP_PASS=Jotiq.Web
+
+# Project Configuration
+PROJECT_NAME=Jotiq Website
+BUILD_COMMAND=build
+BUILD_DIR=out
+
+# Deployment Options
+PASSIVE_MODE=true
+DELETE_REMOTE_FILES=true
+PARALLEL_UPLOADS=3
+VERBOSE_OUTPUT=true
+
+# Backup Options (optional)
+CREATE_BACKUP=false
+BACKUP_DIR=backups
