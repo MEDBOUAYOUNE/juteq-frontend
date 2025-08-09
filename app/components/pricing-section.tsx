@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const plans = [
   {
-    name: "Explore Plan (Free Forever)",
+    name: "Explore Plan",
     price: "$0",
     period: "/month",
     description: "For curious recruiters who want to try JOTIQ risk-free.",
@@ -19,24 +19,24 @@ const plans = [
     features: [
       " 3,000 emails/month (750 AI-written)",
       "AI Voice Calling (~150 min US)",
-      "5 branded content uploads",
-      "job websites scraping",
+      "5 Branded Content Uploads",
+      "Job Websites Scraping",
     ],
     cta: "Choose Connect",
     popular: true,
   },
   {
-    name: "Convert Plan (Power Users)",
+    name: "Convert Plan",
     price: "$89",
     period: "/month",
     description: "Built for recruitment professionals scaling outreach or launching in new markets.",
     features: [
       "4,000 emails/month (1,000 AI-written)",
       "AI Voice Calling (~210 min US)",
-      "AI voice calls (500/month)",
+      "AI Voice Calling (500/month)",
       "Call Recording, Transcription & Summaries",
       "Unlimited Content Uploads ",
-      "job websites scraping",
+      "Job Websites Scraping",
     ],
     cta: "Choose Convert",
     popular: false,
@@ -48,7 +48,7 @@ export default function PricingSection() {
     <section className="py-10 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-semibold font-headline text-[#005BAB] mb-6">Find the Right Plan for You</h2>
+          <h2 className="text-4xl font-bold font-headline text-[#005BAB] mb-6">Find the Right Plan for You</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Choose the plan that fits your outreach needs. Start free and upgrade as you grow.
           </p>
@@ -64,7 +64,7 @@ export default function PricingSection() {
             >
               {plan.popular && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-[#005BAB] text-white px-4 py-1 rounded-full text-sm font-medium">
+                  <span className="bg-[#0075DE] text-white px-4 py-1 rounded-full text-sm font-medium">
                     Most Popular
                   </span>
                 </div>
@@ -73,7 +73,7 @@ export default function PricingSection() {
               <div className="p-8 flex flex-col flex-1">
                 {/* Header */}
                 <div className="text-center mb-8">
-                  <h3 className="text-2xl font-medium text-gray-900 mb-2">{plan.name}</h3>
+                  <h3 className="text-2xl font-medium font-headline text-gray-900 mb-2">{plan.name}</h3>
                   <div className="mb-4">
                     <span className="text-4xl font-semibold text-gray-900">{plan.price}</span>
                     {plan.period && <span className="text-lg text-gray-600">{plan.period}</span>}
@@ -83,7 +83,7 @@ export default function PricingSection() {
 
                 {/* Features */}
                 <div className="mb-8 flex-1">
-                  <p className="text-sm font-medium text-gray-900 mb-4">Included in this plan</p>
+                  <p className="text-sm font-medium text-baby-blue mb-4">Included in this plan</p>
                   <ul className="space-y-3">
                     {plan.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start">

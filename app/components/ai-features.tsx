@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 export default function AIFeatures() {
   return (
-    <section className="py-16">
+    <section className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-center font-headline text-[#005BAB] mb-12">Built to Supercharge your outreach</h2>
+        <h2 className="text-4xl md:text-3xl font-bold text-center font-headline text-[#005BAB] mb-12">Built to Supercharge your outreach</h2>
 
         {/* Feature 1 - Text Left, Visual Right */}
         <div className="grid md:grid-cols-2 gap-8 items-center mb-16">
@@ -17,7 +17,7 @@ export default function AIFeatures() {
           </div>
           <div className="flex items-center justify-end">
             <Image
-              src="/tested/test2.webp"
+              src="/tested/1.png"
               alt="Email Campaign Interface"
               width={400}
               height={300}
@@ -30,7 +30,7 @@ export default function AIFeatures() {
         <div className="grid md:grid-cols-2 gap-8 items-center mb-16">
           <div className="flex items-center md:order-1">
             <Image
-              src="/tested/test4.webp"
+              src="/tested/2.png"
               alt="AI Call Dashboard"
               width={400}
               height={300}
@@ -57,7 +57,7 @@ export default function AIFeatures() {
           </div>
           <div className="flex items-center justify-end">
             <Image
-              src="/tested/test3.webp"
+              src="/tested/3.png"
               alt="Job Leads Dashboard"
               width={400}
               height={300}
@@ -70,7 +70,7 @@ export default function AIFeatures() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="flex items-center md:order-1">
             <Image
-              src="/tested/test4.webp"
+              src="/tested/1.png"
               alt="Analytics Dashboard"
               width={400}
               height={300}

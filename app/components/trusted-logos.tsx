@@ -37,20 +37,15 @@ export default function TrustedLogos() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto">
-        
-        <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl font-semibold font-headline text-gray-800 mb-4">
-            Already trusted by recruitment professionals from
-          </h2>
-          <div className="w-24 h-1 bg-[#005BAB] mx-auto"></div>
+        <div className="text-center mb-8">
+          <p className="text-lg text-gray-600 font-medium">Already trusted by recruitment professionals from:</p>
         </div>
-
+        <div className="mx-16 mb-6">
+          <hr className="border-t-2 border-dashed border-gray-300" />
+        </div>
         <div className="relative w-full">
-          {/* Inner container with padding */}
           <div className="mx-16 relative overflow-hidden">
-            
             <div className="logos-track flex">
-              {/* First set */}
               {companies.map((company, index) => (
                 <div
                   key={`logo-1-${index}`}
@@ -65,7 +60,6 @@ export default function TrustedLogos() {
                   />
                 </div>
               ))}
-              
               {companies.map((company, index) => (
                 <div
                   key={`logo-2-${index}`}
@@ -83,8 +77,10 @@ export default function TrustedLogos() {
             </div>
           </div>
         </div>
+        <div className="mx-16 mt-6">
+          <hr className="border-t-2 border-dashed border-gray-300" />
+        </div>
       </div>
-
       <style jsx>{`
         @keyframes scroll {
           0% {
@@ -94,11 +90,9 @@ export default function TrustedLogos() {
             transform: translateX(-50%);
           }
         }
-        
         .logos-track {
           animation: scroll 20s linear infinite;
         }
-        
         .logos-track:hover {
           animation-play-state: paused;
         }

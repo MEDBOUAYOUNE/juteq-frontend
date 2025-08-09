@@ -41,45 +41,43 @@ export default function FAQ() {
   ]
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-4xl mx-auto">
         {/* Headline */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-center font-headline text-[#005BAB] mb-6">
-            FAQ
+        <div className="text-left mb-16">
+          <h2 className="text-4xl font-bold font-headline text-gray-800 mb-6">
+            FAQs
           </h2>
         </div>
 
         {/* FAQ Items */}
-        <div className="space-y-4">
+        <div className="space-y-0">
           {faqData.map((item, index) => (
             <div 
               key={index}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden transition-shadow duration-300 hover:shadow-xl"
+              className="border-b border-gray-200 last:border-b-0"
             >
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full px-8 py-6 text-left flex items-center justify-between"
+                className="w-full py-6 text-left flex items-center justify-between group hover:bg-gray-50/50 transition-colors"
               >
-                <h3 className="text-xl font-bold text-gray-900 pr-4">
+                <h3 className="text-lg font-medium text-gray-700 pr-4 group-hover:text-gray-900">
                   {item.question}
                 </h3>
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0 w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center">
                   {openItems.includes(index) ? (
-                    <Minus className="w-6 h-6 text-[#005BAB]" />
+                    <Minus className="w-4 h-4 text-white" />
                   ) : (
-                    <Plus className="w-6 h-6 text-[#005BAB]" />
+                    <Plus className="w-4 h-4 text-white" />
                   )}
                 </div>
               </button>
               
               {openItems.includes(index) && (
-                <div className="px-8 pb-6">
-                  <div className="border-t border-gray-200 pt-6">
-                    <p className="text-gray-600 leading-relaxed text-lg">
-                      {item.answer}
-                    </p>
-                  </div>
+                <div className="pb-6">
+                  <p className="text-gray-600 leading-relaxed text-base max-w-3xl">
+                    {item.answer}
+                  </p>
                 </div>
               )}
             </div>
